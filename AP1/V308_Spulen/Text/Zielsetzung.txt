@@ -1,0 +1,1 @@
+Ziel des Versuch ist es, verschiedene Magnetfelder zu vermessen und die Hysteresekurve einer Toroidspule mit Eisenkern zu messen.

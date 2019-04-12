@@ -1,0 +1,23 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}
+\contentsline {section}{\numberline {2}Theorie}{3}
+\contentsline {subsection}{\numberline {2.1}Röntgenemission}{3}
+\contentsline {subsection}{\numberline {2.2}Röntgenabsorption}{5}
+\contentsline {section}{\numberline {3}Aufbau und Durchführung}{7}
+\contentsline {subsection}{\numberline {3.1}Vorbereitungsaufgabe}{7}
+\contentsline {subsection}{\numberline {3.2}Aufbau}{7}
+\contentsline {subsection}{\numberline {3.3}Verifizierung der Bragg-Bedingung}{8}
+\contentsline {subsection}{\numberline {3.4}Emissionsspektrum}{8}
+\contentsline {subsection}{\numberline {3.5}Absorptionsspektren}{8}
+\contentsline {section}{\numberline {4}Auswertung}{9}
+\contentsline {subsection}{\numberline {4.1}Bragg Bedingung}{9}
+\contentsline {subsection}{\numberline {4.2}Emissionsspektrum einer Cu-Röntgenröhre}{10}
+\contentsline {subsection}{\numberline {4.3}Absorptionsspektrum}{14}
+\contentsline {subsubsection}{\numberline {4.3.1}Brom}{14}
+\contentsline {subsubsection}{\numberline {4.3.2}Strontium}{17}
+\contentsline {subsubsection}{\numberline {4.3.3}Zirkonium}{20}
+\contentsline {subsection}{\numberline {4.4}Moselysches-Gesetz}{23}
+\contentsline {subsubsection}{\numberline {4.4.1}Quecksilber}{24}
+\contentsline {section}{\numberline {5}Diskussion}{27}

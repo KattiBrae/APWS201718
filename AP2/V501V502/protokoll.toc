@@ -1,0 +1,19 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Theorie}{3}
+\contentsline {subsection}{\numberline {1.1}Theorie zur Ablenkung im elektrischen Feld}{3}
+\contentsline {subsection}{\numberline {1.2}Theorie zur Ablenkung im magnetischen Feld}{4}
+\contentsline {section}{\numberline {2}Aufbau und Durchführung}{7}
+\contentsline {subsection}{\numberline {2.1}Aufbau und Durchführung des Versuchs V501}{7}
+\contentsline {subsubsection}{\numberline {2.1.1}Proportionalität der Ablenkung und der Ablenkungsspannung}{7}
+\contentsline {subsubsection}{\numberline {2.1.2}Kathodenstrahl-Oszillograph und stehende Wellen}{7}
+\contentsline {subsection}{\numberline {2.2}Aufbau und Durchführung des Versuchs V502}{8}
+\contentsline {subsubsection}{\numberline {2.2.1}Messung der spezifischen Ladung eines Elektrons}{8}
+\contentsline {subsubsection}{\numberline {2.2.2}Messung der Feldstärke des lokalen Erdmagnetfelds}{9}
+\contentsline {section}{\numberline {3}Auswertung}{9}
+\contentsline {subsection}{\numberline {3.1}Auswertung zu V501}{9}
+\contentsline {subsection}{\numberline {3.2}Auswertung zu V502}{14}
+\contentsline {section}{\numberline {4}Diskussion}{20}
+\contentsline {subsection}{\numberline {4.1}Diskussion zu V501}{20}
+\contentsline {subsection}{\numberline {4.2}Diskussion zu V502}{20}

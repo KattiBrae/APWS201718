@@ -1,0 +1,130 @@
+Bei einem Spannungsabfall eines Kondensators werden Wertepaare genommen.
+Diese sind in der Tabelle \ref{tab:entladekurve} aufgelistet.
+In einem halblogarithmischen Diagramm werden die Wertepaare dargestellt.
+Durch eine lineare Ausgleichsgerade kann in der Abbildung \ref{fig:entladekurve} die Steigung ermittelt werden.
+Über die Gleichung \eqref{eqn:Entladekurve} lässt sich $RC$ bestimmen.
+Die entsprechende Ausgleichsrechnung hat die Form:
+\begin{equation*}
+  \ln{ \left( \frac{U_c}{U_0} \right)}=-\frac{1}{RC}\cdot t+b.
+\end{equation*}
+Die Parameter ergeben sich zu:
+\begin{align*}
+  RC &=& \SI{1.57\pm 0.60e-3}{s}\\
+  b  &=& \SI{2.78 \pm 3.53323839e-03}{}.\\
+\end{align*}
+\input{tabelleentladekurve.tex}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Zeit.pdf}
+  \caption{Lineare Regression zur Bestimmung der Zeitkonstanten mithilfe der Entladekurve}
+  \label{fig:entladekurve}
+\end{figure}
+%\FloatBarrier
+%
+%
+Die nächste Methode zur Bestimmung der Zeitkonstanten erfolgt mit Hilfe der Freqenz und der anliegenden Spannung der Wechselspannungsquelle. Die Werte sind in der Tabelle 2 aufgeführt.
+Über die Abbildung \ref{fig:frequenz} und einer Ausgleichsrechnung, mit Hilfe von Gleichung \eqref{eqn:ampkond} lässt sich der Wert für die Zeitkonstante bestimmen.\\
+Die Ausgleichsrechnung hat die Form:
+\begin{equation*}
+    U_{c}=exp(-af+b).
+\end{equation*}
+Als Parameter ergeben sich:
+\begin{align*}
+  a &=& \SI{0.00309 \pm 0.00014}{}\\
+  b &=& \SI{2.29120 \pm 0.01529}{}.\\
+\end{align*}
+Damit ergibt sich
+\begin{equation*}
+  RC = \SI{3.09\pm0.14e-3}{s}
+\end{equation*}
+\input{tabelleAmlpKon.tex}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{Freq.pdf}
+  \caption{Ausgleichsrechnung zur Bestimmung der Zeitkonstanten mithilfe der Messung der Frequenz}
+  \label{fig:frequenz}
+\end{figure}
+%\FloatBarrier
+%
+%
+In einer dritten Methode wird die Zeitkonstante mit Hilfe der Phasenverschiebung zwischen Generatorspannung und Kondensatorspannung ermittelt. Die bestimmung der Phasenverschiebung
+$\phi$ erfolgt über die Formel \eqref{eqn:phasenverschiebung}.
+%\begin{equation*}
+%  \frac{a}{b}\cdot2\pi=\phi.
+%\end{equation*}
+Die Werte sind in der Tabelle \ref{tab:phasenverschiebung} aufgeführt.
+Die Ausgleichsrechnung hat die Form
+\begin{equation*}
+   \phi= a\arctan{(bx)}.
+\end{equation*}
+Als Parameter ergeben sich:
+\begin{align*}
+  a &=& \SI{0.99991152\pm0.015781563484}{}\\
+  b &=& \SI{0.00816372\pm0.000586744095}{}.\\
+\end{align*}
+Für RC ergibt sich ein Wert von
+\begin{equation*}
+   RC =  \SI{8.16372 \pm 0.58674e-3}{s}.
+\end{equation*}
+\input{tabelleWinkelHz.tex}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{Polar.pdf}
+  \caption{Ausgleichsrechnung zur Bestimmung der Zeitkonstanten mithilfe der Phasenverschiebung}
+  \label{fig:phasenverschiebung}
+\end{figure}
+%\FloatBarrier
+%
+%
+Über die Tabelle 4 lässt sich ein Polarplot (Abb. \ref{fig:phasenverschiebungpolar}) erstellen.
+\input{tabelleZeitkonstante.tex}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{pl.pdf}
+  \caption{Polarplot zur Beobachtung der Phasenverschiebung zwischen der Generator- und Kondensatorspannung.}
+  \label{Polarplot zur Beobachtung der Phasenverschiebung zwischen der Generator- und Kondensatorspannung.}
+\end{figure}
+%\FloatBarrier
+%
+%
+Um die Integrierbarkeit der RC-Spannung zu zeigen wird der Erwartungswert mit dem Realwert vom Oszilloskop verglichen. Da sich Erwartungs- und Realwert decken ist gezeigt das die RC Spannung integrabel ist.
+\begin{figure}[h!]
+ \centering
+ \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{Oszilloskop1.pdf}
+  \caption{Sinusspannung integriert}
+  \label{fig:intsin}
+ \end{subfigure}
+ \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{Oszilloskop2.pdf}
+  \caption{Dreiecksspannung integriert}
+  \label{fig:90gradnormal}
+ \end{subfigure}
+% \caption{Spannungsverläufe an dem Mischer}
+% \label{fig:000090}
+\end{figure}
+
+%\begin{figure}
+%  \centering
+%  \includegraphics[width=\textwidth]{Oszilloskop1.pdf}
+%  \caption{Sinusspannung integriert}
+%  \label{fig:intsin}
+%\end{figure}
+%\begin{figure}
+%  \centering
+%  \includegraphics[width=\textwidth]{Oszilloskop2.pdf}
+%  \caption{Dreiecksspannung integriert}
+%  \label{fig:intdrei}
+%\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.48\textwidth]{Oszilloskop3.pdf}
+  \caption{Rechteckspannung integriert}
+  \label{fig:intrecht}
+\end{figure}
+\FloatBarrier
+%
+%
+%

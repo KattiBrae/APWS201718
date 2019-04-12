@@ -1,0 +1,2 @@
+Ziel des Versuches ist es den Dämpfungswiderstand zu ermitteln. Dies erfolgt über die zeitabhängige Amplitude eines gedämpften Schwingkreises und über den aperiodischen Grenzfall.
+Desweiteren soll die Frequenzabhängigkeit der Phase zwischen Kondensator- und Erregerspannung ermittelt werden.

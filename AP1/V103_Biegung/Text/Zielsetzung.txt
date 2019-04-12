@@ -1,0 +1,1 @@
+Ziel des Versuches ist es das Elastizitätsmodul eines zuvor verifizierten Metalles zu bestimmen und mit den Literaturdaten zu vergleichen.

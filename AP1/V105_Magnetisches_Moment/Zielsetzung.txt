@@ -1,0 +1,2 @@
+Der Versuch hat das Ziel, das magnetische Moment eines Stabmagneten auf drei unterschiedliche Weisen zu messen:
+über die Ausnutzung der Gravitation, über das Trägheitsmoment mit der daraus resultierenden Schwingungsdauer und über die Präzessionsbewegung.

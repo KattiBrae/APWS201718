@@ -1,0 +1,27 @@
+\documentclass[captions=tableheading]{scrartcl}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+
+
+
+
+\begin{document}
+\begin{landscape}
+
+
+\begin{table}
+  \centering
+  \caption{Messdaten}
+  \label{tab:V502}
+  \begin{tabular}{c c c c c c}
+    \toprule
+    $Höhe$ & $Strom_250$ & $Strom_300$ & $Strom_350$ & $Strom_400$ & $Strom_440$\\
+    cm &   I &     I &    I &     I &    I   \\
+    \midrule
+      \input{V502.txt}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\end{landscape}
+\end{document}

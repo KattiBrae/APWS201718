@@ -1,0 +1,27 @@
+\documentclass[captions=tableheading]{scrartcl}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+
+
+
+
+\begin{document}
+%\begin{landscape}
+
+
+\begin{table}
+  \centering
+  \caption{Messdaten}
+  \label{tab:some_data}
+  \begin{tabular}{c c }
+    \toprule
+     x &	 B	   \\
+     cm &   mT  \\
+    \midrule
+      \input{Langsp.txt}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+%\end{landscape}
+\end{document}

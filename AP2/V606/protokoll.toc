@@ -1,0 +1,12 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}
+\contentsline {section}{\numberline {2}Theorie}{3}
+\contentsline {subsection}{\numberline {2.1}Berechnung der Suszeptibilität}{3}
+\contentsline {subsection}{\numberline {2.2}Messung der Suszeptibilität}{6}
+\contentsline {section}{\numberline {3}Aufbau und Durchführung}{8}
+\contentsline {section}{\numberline {4}Auswertung}{9}
+\contentsline {subsection}{\numberline {4.1}Filterkurve des Selektivfilters}{9}
+\contentsline {subsection}{\numberline {4.2}Suszeptibilität von Neodym}{10}
+\contentsline {section}{\numberline {5}Diskussion}{13}

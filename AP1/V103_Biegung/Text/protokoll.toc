@@ -1,0 +1,21 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{2}
+\contentsline {section}{\numberline {2}Theorie}{2}
+\contentsline {subsection}{\numberline {2.1}Einseitige Einspannung}{2}
+\contentsline {subsection}{\numberline {2.2}Zweiseitige Auflage}{3}
+\contentsline {section}{\numberline {3}Aufbau und Durchführung}{6}
+\contentsline {subsection}{\numberline {3.1}Einseitige Einspannung}{6}
+\contentsline {subsection}{\numberline {3.2}Zweiseitige Einspannung}{6}
+\contentsline {section}{\numberline {4}Auswertung}{6}
+\contentsline {subsection}{\numberline {4.1}Bestimmung der Dichten der Stäbe}{6}
+\contentsline {subsubsection}{\numberline {4.1.1}Eckiger Stab}{6}
+\contentsline {subsubsection}{\numberline {4.1.2}Runder Stab}{7}
+\contentsline {subsection}{\numberline {4.2}Bestimmung der Durchbiegung D(x)}{8}
+\contentsline {subsection}{\numberline {4.3}Bestimmung des Elastizitätmoduls E bei einseitiger Einspannung}{14}
+\contentsline {subsubsection}{\numberline {4.3.1}Eckiger Stab}{15}
+\contentsline {subsubsection}{\numberline {4.3.2}Runder Stab}{15}
+\contentsline {subsection}{\numberline {4.4}Bestimmung des Elastizitätmoduls E bei beidseitiger Einspannung}{15}
+\contentsline {section}{\numberline {5}Diskussion}{16}
+\contentsline {section}{\nonumberline Literatur}{17}

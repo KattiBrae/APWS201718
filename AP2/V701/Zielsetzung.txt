@@ -1,0 +1,3 @@
+In diesem Versuch wird die Reichweite und die Statistik der $\alpha$-Strahlung untersucht.
+Für die Reichweite wird die Zählrate in Abhängigkeit des Luftdrucks untersucht.
+Für die Statistik wird die Zählrate in einem Histogramm aufgetragen.

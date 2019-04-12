@@ -1,0 +1,79 @@
+\documentclass[captions=tableheading]{scrartcl}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+
+
+
+
+\begin{document}
+%\begin{landscape}
+
+\begin{table}
+  \centering
+  \caption{Differentialquotienten für $T_A$ und $T_B$}
+  \label{tab:diff}
+  \begin{tabular}{c c c c c c c c c}
+    \toprule
+    $t$ & $T_A$ & Fehler \Delta $T_A$ & $\frac{dT_A}{dt}$ & $\frac{dT_A}{dt}$ &  $T_B$ & Fehler \Delta $T_B$ & $\frac{dT_B}{dt}$ & $\frac{dT_B}{dt}$\\
+    min & K & K & $\frac{K}{min}$ & $\frac{K}{min}$ & K & K & $\frac{K}{min}$ & $\frac{K}{min}$\\
+    \midrule
+      1  & 295.75 &        0.0666 & 1.3538 &    0.01285 & 296.65 &       0.0822 & -0.8013 & 0.0159\\
+      6  & 289.65 &        0.1013 & 1.7115 &    0.01304 & 304.05 &       0.1250 & -1.6308 & 0.0161\\
+      12 & 279.75 &        0.1696 & 1.7071 &    0.01361 & 314.55 &       0.2093 & -1.5969 & 0.0168\\
+      18 & 272.85 &        0.2478 & 1.2297 &    0.01450 & 323.85 &       0.3059 & -0.4401 & 0.0179\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \centering
+  \caption{Bestimmung der Güteziffer $\nu$}
+  \label{tab:guete}
+  \begin{tabular}{c c c c c}
+    \toprule
+     $t$ in min & $\nu_{ideal}$ & Fehler \Delta $\nu_{ideal}$ & $\nu_{real}$ & Fehler \Delta $\nu_{real}$\\
+    \midrule
+      1         & 329.6111 & 38.6746 & 0.0517 & 0.0061\\
+      6         &  21.1146 &  0.2292 & 0.8274 & 0.0092\\
+      12        &   9.0388 &  0.0654 & 1.9996 & 0.0155 \\
+      18        &   6.3500 &  0.0445 & 2.9305 & 0.0226 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \centering
+  \caption{Bestimmung des Massendurchsatzes $\frac{d m}{d t} $}
+  \label{tab:diff}
+  \begin{tabular}{c c c}
+    \toprule
+    $t$ & $\frac{d m}{d t}$ & Fehler \Delta $\frac{d m}{d t}$ \\
+    min & $\frac{g}{s}$ & $\frac{g}{s}$ \\
+    \midrule
+      1  & 0.9679  &  0.00046    \\
+      6  & 1.2237  &  0.00047    \\
+      12 & 1.2205  &  0.00049    \\
+      18 & 0.0441  &  0.00052    \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \centering
+  \caption{Bestimmung der Leistung}
+  \label{tab:guete}
+  \begin{tabular}{c c c c c c c}
+    \toprule
+     $t$ in min &  $P_A +1$ &  $P_B+1$ & Leistung in Watt & Leistung Fehler in Watt\\
+    \midrule
+      1         & 2.5 & 7.2  & 2.3977   & 0.0021 \\
+      6         & 3.1 & 9    & 3.7892   & 0.0021 \\
+      12        & 3.2 & 11.5 & 4.7457   & 0.0022  \\
+      18        & 3.2 & 13.9 & 0.1993   & 0.0023  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+%\end{landscape}
+\end{document}

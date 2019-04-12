@@ -1,0 +1,99 @@
+\subsection{Filterkurve des Selektivfilters}
+Die Ausgangsspannung $U_A$ wird in Abhängigkeit der Frequenz $f$ gemessen.
+Die Messwerte sind in Tabelle \ref{tab:Q} zu finden.
+Sie sind in Abbildung \ref{fig:Q} aufgetragen.
+\input{tabQ.tex}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Q.pdf}
+  \caption{Ausgangsspannung $U_A$ gegen Frequenz $f$}
+  \label{fig:Q}
+\end{figure}
+Als Maximum der Messwerte ergibt sich $U_A=U_{Sp}=\SI{0.560}{V}$ bei der Frequenz $f$:
+\begin{equation*}
+  f=\SI{35}{kHz}.
+\end{equation*}
+Diese Frequenz wird vom Selektivfilter ungehindert durchgelassen.
+
+\FloatBarrier
+\subsection{Suszeptibilität von Neodym}
+Zur Berechnung des Theoriewerts der Suszeptibilität $\chi$ wird zunächst die Anzahl der magnetischen Momente pro Volumeneinheit berechnet.
+Die Masse $m$ berechnet sich allgemein mit der Dichte $\rho$ und dem Volumen $V$ als:
+\begin{equation*}
+  m= \rho V.
+\end{equation*}
+Die Masse eines Stoffs lässt sich aber auch durch die Molare Masse $M$ und die Stoffmenge $n$ ausdrücken:
+\begin{equation*}
+  m= M n.
+\end{equation*}
+Damit ergibt sich
+\begin{equation*}
+  N= \frac{n}{V}=\frac{\rho}{M}.
+\end{equation*}
+Mit der molaren Masse $M= 144,242 u $ \cite{molm} und der Dichte $\rho = \SI{7240}{kg/m^3}$ ergibt sich:
+\begin{equation*}
+  N= \SI{3.0227e28}{1/m^3}.
+\end{equation*}
+Dabei ist $u$ die atomare Masseneinheit \cite{taschenrechner}.
+\\Die Quantenzahlen ergeben sich aus der Anzahl der 4f-Elektronen des Stoffs.
+Neodym besitzt drei 4f-Elektronen.
+Die f-Elektronen besitzen generell die Nebenquantenzahl, auch Drehimpuls-Quantenzahl, $l=3$.
+\\Die Spinquantenzahl s ergibt sich aus den Hund'schen Regeln zu $s= 3\cdot \frac{1}{2} = \SI{1.5}{}$.
+%Der Drehimpuls L berechnet sich zu $L=\SI{6}{}$.
+\\Damit kommt es zu einem Gesamtdrehimpuls j von $j=\SI{4.5}{}$.
+\\Der Landé-Faktor ergibt sich nach Gleichung \eqref{eqn:lande} zu:
+\begin{equation*}
+  g_j=\frac{8}{11}=\SI{0.727}{}.
+\end{equation*}
+Mit der magnetischen Feldkonstante $\mu_0$ \cite{taschenrechner} und der Raumtemperatur $T=\SI{293.15}{K}$ berechnet sich die Suszeptibilität nach Gleichung \eqref{eqn:suszT} als:
+\begin{equation*}
+  \chi_{theo}=\SI{0.003522}{}
+\end{equation*}
+\\Die Probe des Metalls Neodym $Nd_2 O_3$ besitzt folgende Eigenschaften:
+\begin{align*}
+  \text{Masse} && m=& \SI{0.009}{kg}   \\
+  \text{Dichte} && \rho=& \SI{7240}{kg/m^3}   \\
+  \text{Länge} && L=& \SI{0.165}{m}   \\
+  \# \text{4f-Elektronen} && n=& \SI{3}{}.
+\end{align*}
+Die effektive Querschnittsfläche $Q_{\text{real}}$ der Probe wird durch
+\begin{equation*}
+  Q_{\text{real}}= \frac{m}{L \cdot \rho}
+\end{equation*}
+berechnet und ergibt sich damit zu
+\begin{equation*}
+  Q_{\text{real}}= \SI{7.53e-6}{m^2}.
+\end{equation*}
+Die Messspule hat den Querschnitt $F$
+\begin{equation*}
+  F=\SI{86.6}{mm^2}=\SI{86.6e-6}{m^2}
+\end{equation*}
+Der Widerstand der Brückenschaltung beträgt laut dem Gerät $R_3=\SI{998}{\Omega}$.
+Die Messwerte zur Berechnung der Suszeptibilität sind in Tabelle \ref{tab:nd} notiert.
+\input{tabnd.tex}
+Der Mittelwert berechnet sich allgemein mit der Anzahl $n$ der Messwerte $x$ über
+\begin{equation*}
+  \langle x \rangle= \frac{1}{n}\sum_{1}^{n}x_n.
+\end{equation*}
+Der Wert $\Delta R$ wird gemittelt zu
+\begin{equation*}
+  \langle \Delta R \rangle =\frac{14}{15} \Omega = \SI{0.933}{\Omega}.
+\end{equation*}
+$\Delta U$ wird gemittelt und ergibt sich als Brückenspannung:
+\begin{equation*}
+ \langle \Delta U \rangle =U_{Br} = \SI{3.667e-3}{V}.
+\end{equation*}
+Die eingehende Spannung hat die Amplitude
+\begin{equation*}
+  U_{Sp}= \SI{0.560}{V}.
+\end{equation*}
+Mit Gleichung \eqref{eqn:suszU} und unter Beachtung der beiden eingeschalteten Verstärker errechnet sich die Suszeptibilität zu
+\begin{equation*}
+  \chi_{U}=\SI{0.00301}{}.
+\end{equation*}
+Mit den aufgeführten Werten und Gleichung \eqref{eqn:suszR} und unter der Beachten der Verstärker ergibt sich $\chi$ für die Neodym-Probe zu
+\begin{equation*}
+  \chi_{R}=\SI{0.00215}{}.
+\end{equation*}
+
+\FloatBarrier

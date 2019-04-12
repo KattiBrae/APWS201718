@@ -1,0 +1,4 @@
+In diesem Experiment wird die Wechselwirkung energetischer Strahlung mit Materie untersucht.
+Als Strahlung werden $\gamma$- und $\beta$-Strahlen verwendet.
+Mit der $\gamma$-Strahlung wird der Absorptionskoeffizient von Blei und Eisen überprüft.
+Die Absorption der $\beta$-Strahlung wird benutzt um die maximale Emissionsenergie des $^{99}\text{Tc}$-Strahlers zu messen.

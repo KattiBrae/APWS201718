@@ -1,0 +1,103 @@
+\subsection{Bestimmung der Strömungsgeschwingigkeiten}
+
+Die eingehende Frequenz liegt bei
+\begin{align*}
+  \nu_{\text{0}}=\SI{2}{MHz}.
+\end{align*}
+Der Dopplerwinkel $\alpha$ wird mit Gleichung \eqref{eqn:alpha} errechnet.
+Die jeweiligen Dopplerwinkel sind mit ihren Prismenwinkeln $\theta$ in Tabelle \ref{tab:alpha} notiert.
+\input{alpha.tex}
+%\begin{align}
+%  \frac{\Delta \nu}{\cos{(\alpha)}}= \frac{2 \nu_{\text{0}}}{c}\cdot v\\
+%  \frac{c \Delta \nu}{2 \nu_{\text{0}}\cos{(\alpha)}}= v\\
+%\end{align}
+Die Flussgeschwindigkeit berechnet sich über Gleichung \eqref{eqn:v}.
+Als Schallgeschwindigkeit wird
+\begin{align*}
+  c_L=\SI{1800}{\frac{m}{s}}
+\end{align*}
+verwendet.
+Die Messwerte zu den Flussgeschwindigkeiten sind in Tabelle \ref{tab:v} aufgetragen.
+\input{geschw.tex}
+Die Strömungsgeschwindigkeiten werden für die unterschiedlichen Prismenwinkel gegen $\frac{\Delta \nu}{\cos{\alpha}}$ in den Abbildungen \ref{fig:15}, \ref{fig:30} und \ref{fig:60} aufgetragen.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{15geschw.pdf}
+  \caption{$v$ gegen $\frac{\Delta \nu}{\cos{\alpha}}$ für den Winkel $\theta=\SI{15}{°}$}
+  \label{fig:15}
+\end{figure}
+%
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{30geschw.pdf}
+  \caption{$v$ gegen $\frac{\Delta \nu}{\cos{\alpha}}$ für den Winkel $\theta=\SI{30}{°}$}
+  \label{fig:30}
+\end{figure}
+%
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{60geschw.pdf}
+  \caption{$v$ gegen $\frac{\Delta \nu}{\cos{\alpha}}$ für den Winkel $\theta=\SI{60}{°}$}
+  \label{fig:60}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Bestimmung des Strömungsprofils}
+Die Messung wird bei $x=\SI{12}{\mu s}$ gestartet, da mit der Umrechnung $\SI{4}{\mu s}= \SI{10e-3}{m}$ ersichtlich wird, dass eine Messung erst ab einer Tiefe von $l=\SI{30.7e-3}{m}=\SI{12.28}{\mu s}$ sinnvoll ist.
+Erst nach der Länge $l$ tritt der Schall aus dem Prisma in die Dopplerflüssigkeit.
+Die Messtiefe $x=\SI{12}{\mu s}$ entspricht dem Beginn des Rohrs mit $s=\SI{0}{mm}$
+Die Messwerte zur Bestimmung des Strömungsprofils sind in Tabelle \ref{tab:profil} notiert.
+\input{profil.tex}
+Die Messwerte sind für die jeweiligen Volumenströme $\dot{V}$ in den Abbildungen \ref{fig:40i}, \ref{fig:40v}, \ref{fig:65i} und \ref{fig:65v} aufgetragen.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{40prozi.pdf}
+  \caption{Streuintensität $I$ gegen die Messtiefe $s$ für $\dot{V}=\SI{3,4}{l/min}$}
+  \label{fig:40i}
+\end{figure}
+%
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{40prozv.pdf}
+  \caption{Flussgeschwindigkeit $v$ gegen die Messtiefe $s$ für $\dot{V}=\SI{3,4}{l/min}$}
+  \label{fig:40v}
+\end{figure}
+%
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{65prozi.pdf}
+  \caption{Streuintensität $I$ gegen die Messtiefe $s$ für $\dot{V}=\SI{4,8}{l/min}$}
+  \label{fig:65i}
+\end{figure}
+%
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{65prozv.pdf}
+  \caption{Flussgeschwindigkeit $v$ gegen die Messtiefe $s$ für $\dot{V}=\SI{4,8}{l/min}$}
+  \label{fig:65v}
+\end{figure}
+Zur Bestimmung eines Referenzwertes werden die ersten zwölf Messwerte gemittelt um die mittlere Flussgeschwindigkeit zu errechnen.
+Ein Mittelwert berechnet sich durch die Anzahl der Messwerte $N$
+\begin{align*}
+  \bar{x}=\frac{1}{N} \left( \sum^{N}_{n=1} x_n \right).
+\end{align*}
+Es ergeben sich folgende Mittelwerte:
+\begin{align*}
+  \bar{v}_{3,4 l/min}= & \SI{0.658}{\frac{m}{s}} \\
+  \bar{v}_{4,8 l/min}= & \SI{1.005}{\frac{m}{s}} \\
+\end{align*}
+Als theoretische Vergleichswerte der Flussgeschwindigkeit werden mit dem Kontinuitätsgesetz der Hydrodynamik
+\begin{align}
+  \dot{V}=A v \Leftrightarrow v= \frac{\dot{V}}{A}
+  \label{eqn:konti}
+\end{align}
+berechnet.
+Die theoretischen Flussgeschwindigkeiten für den Rohrradius $r=\SI{5e-3}{m}$ und beiden Volumenströme berechnen sich zu:
+\begin{align*}
+  v_{\text{theo, 3,4 l/min}}=& \SI{0.722}{\frac{m}{s}} \\
+  v_{\text{theo, 4,8 l/min}}=& \SI{1.019}{\frac{m}{s}} \\
+\end{align*}
+
+
+\FloatBarrier

@@ -1,0 +1,27 @@
+Die Werte der Suszeptibilität unterliegen verschiedenen Fehlerquellen.
+Initial ist auffällig, dass das Amperemeter auch ohne angeschlossene Spannungsquelle stark ausschlägt.
+Während der Messung gibt es weitere starke Schwankungen.
+Desweiteren können parallave Fehler und Schwankungen im Stromnetz nicht ausgeschlossen werden.
+Außerdem wird versehentlich vor dem Messungsbeginn der Parallelwiderstand verändert, sodass nur die Messung für Neodym auswertbar wird.
+Zudem filtert der Bandpassfilter nicht alle Frequenzen und die Messung der Filterkurve wurde mit der Güte $Q=10$ statt $Q=100$ durchgeführt.
+Weiterhin hat der Funktionsgenerator einen Wackelkontakt.
+\\Als theoretischer Wert der Suszeptibilität ergibt sich
+\begin{equation*}
+  \chi_{theo}=\SI{0.003522}{}.
+\end{equation*}
+Der errechnete Messwert über die Brückenspannung berechnet sich zu
+\begin{equation*}
+  \chi_{U}=\SI{0.00301}{}.
+\end{equation*}
+Die Suszeptibilität über die Widerstände berechnet, beträgt
+\begin{equation*}
+  \chi_{R}=\SI{0.00215}{}.
+\end{equation*}
+Die relative Abweichung $f$ wird allgemein über
+\begin{equation*}
+  f=\frac{x_{exp}-x_{theo}}{x_{theo}}
+\end{equation*}
+berechnet.
+Die Abweichung zwischen dem über die Spannung berechneten Wert $\chi_{U}$ und dem theoretischen Wert beträgt dementsprechend $f_{U}=\SI{14.54}{\%}$.
+Der über die Widerstände errechnete Wert weicht um $f_{R}=\SI{38.96}{\%}$ von dem Theoriewert ab.
+Insgesamt lässt sich sagen, dass die Erwartungen dennoch erfüllt wurden, denn die Suszeptibilitäten liegen in einer passenden Größenordnung.

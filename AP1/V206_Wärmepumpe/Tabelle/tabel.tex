@@ -1,0 +1,27 @@
+\documentclass[captions=tableheading]{scrartcl}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+
+
+
+
+\begin{document}
+\begin{landscape}
+
+
+\begin{table}
+  \centering
+  \caption{Messdaten}
+  \label{tab:some_data}
+  \begin{tabular}{c c c c c c c c c c c c}
+    \toprule
+    $t$ & $p_A$ & $p_A+1$ & $T_A$ & $T_A$ & $\frac{1}{T_A}$ & $p_B$ & $p_B+1$ & $T_B$ & $T_B$ & $\frac{1}{T_B}$ & $P$\\
+    min &   bar &     bar &    °C &     K &   $\frac{1}{K}$ &   bar &     bar &    °C &     K &   $\frac{1}{K}$ &  W \\
+    \midrule
+      \input{tabel.txt}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\end{landscape}
+\end{document}

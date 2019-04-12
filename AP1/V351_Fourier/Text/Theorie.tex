@@ -1,0 +1,35 @@
+Periodische Vorgänge sind in der Physik beinahe allgegenwärtig.
+Typische periodische Funktionen sind
+\begin{align*}
+  f(t) &=& c_{1} \sin{(\omega t)}\\
+  f(t) &=& c_{2} \cos{(\omega t)}\\
+\end{align*}
+mit den Amplituden $c_{1}$ und $c_{2}$ und der Kreisfrequenz $\omega$.
+Letztere lässt sich auch als $\omega = 2 \pi \nu = 2 \pi /T$ schreiben, wobei $\nu$ die Frequenz des Vorgangs ist und $T$ die Periodendauer.
+Aus diesen beiden Funktionen lassen sich fast alle periodischen Vorgänge zusammensetzen.
+Das Fourier'sche Theorem wird nun ausgenutzt um einen periodischen Vorgang in sinus- oder cosinusförmige Einzelvorgänge zu zerlegen.
+Wenn die Reihe
+\begin{equation*}
+  f(t)= \frac{1}{2}a_0+\sum_{n=1}^{\infty} \left(a_{n} \cos{(n\omega t)} + b_{n} \sin{(n \omega t)}  \right)
+\end{equation*}
+absolut konvergiert, dann lassen sich die Koeffizienten $a_{0}$, $a_{n}$ und $b_{n}$ errechnen durch:
+\begin{align*}
+  a_{0} &=& \frac{2}{T} \int_0^T \! f(t) dt\\
+  a_{n} &=& \frac{2}{T} \int_0^T \! f(t) \cos{(n \omega t)} dt\\
+  b_{n} &=& \frac{2}{T} \int_0^T \! f(t) \sin{(n \omega t)} dt.
+\end{align*}
+Dabei ist $\nu_{1}=\frac{\omega_{1}}{2 \pi}$ die Grundfrequenz und die auftretenden ganzzahligen Vielfachen der Grundfrequenz werden 'harmonische Oberschwingungen' genannt.
+Ist $f(t)$ eine zu y-Achse symmetrische Funktion, so sind alle $b_{n}=0$.
+Dies wird auch 'gerade' Funktion genannt.
+Wenn $f(t)$ punktsymmetrisch zum Ursprung ist, dann sind alle $a_{0}=a_{n}=0$.
+Dies ist eine 'ungerade' Funktion.
+Es ergibt sich ein Linienspektrum im sogenannten 'Fourierraum' oder 'Frequenzraum', wenn die Amplitude der Schwingungsfunktion $A$ gegen die Kreisfrequenz $\omega$ aufgetragen wird.
+An den Stellen, wo die Funktion unstetig ist, entsteht eine Überschwingung. Dies wird das Gibb'sche Phänomen genannt.
+\\Durch eine Fouriertransformation lässt sich das Frequenzspektrum $g(\omega)$ einer beliebigen Schwingungsfunktion bestimmten:
+\begin{equation*}
+  g(\omega) = \int_{-\infty}^{\infty} \! f(t) \cdot e^{i \omega t} dt.
+\end{equation*}
+
+
+%- Keine delta-Distributionen, da nicht von -inf bis inf integriert werden kann, breite Peaks
+%- Nebenmaxima

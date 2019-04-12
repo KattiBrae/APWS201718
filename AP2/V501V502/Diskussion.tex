@@ -1,0 +1,62 @@
+\subsection{Diskussion zu V501}
+In der ersten Messreihe gibt es einige Fehlerquellen.
+Mögliche Fehlerquellen sind Spannungsschwankungen des Stromnetzes, parallaxe Fehler beim Ausrichten des leuchtenden Punktes auf den Linien des Gitternetzes,
+störende elektrische und magnetische Felder und weiteres.
+Die störenden Felder bewirken eine Ablenkung der Teilchen.
+Insbesondere bei dem Versuch 502, der zuvor stattfand, werden diffuse Störungen des Erdmagnetfelds festgestellt.
+Daraus wird gefolgert, dass die umgebenden Elektrogeräte und andere Dinge störende elektrische oder magnetische Felder emittieren.
+Dennoch verläuft die Ablenkung des Elektronenstrahls wie erwartet.
+Der Zusammenhang zwischen der Beschleunigungsspannung $U_{B}$, der Ablenkspannung $U_{d}$ und der Ablenkung $D$ ist linear.
+\\Die Steigung des Graphen, in dem die Empfindlichkeit $D/U_{d}$ gegen $1/U_{B}$ aufgetragen ist, beträgt:
+\begin{equation*}
+  a=\SI{0,3730 \pm 0,0115}{m}
+\end{equation*}
+\\Die zweite Messreihe zur Erzeugung der stehenden Wellen mit dem selbst gebauten Oszilloskop verläuft weniger genau.
+Probleme bei der Messung sind, dass die Frequenz der Wellen auf dem Schirm nach dem Einstellen der Frequenz der Sägezahnspannung $\nu_{Säg}$ schnell wieder zunimmt.
+Dies führt dazu, dass die Wellen für einige Augenblicke tatsächlich stehen, sich dann aber wieder bewegen.
+Außerdem ist der Regler für $\nu_{Säg}$ schwer einzustellen.
+Der Spannungsgenerator des angelegten und untersuchten Wechselstroms gibt an, Spannungen mit Frequenzen von $\nu_{theo}= 80-90 \si{Hz}$ auszugeben.
+Initial bei der Messung fällt auf, dass die Werte für $\nu_{Säg}$ ungefähr Vielfachen von $\SI{25}{Hz}$ entsprechen.
+Dies passt jedoch nicht zu den vom Gerät angegebenen Frequenzen.
+Als Frequenz des Wechselstroms wird
+\begin{equation*}
+  \nu_{exp} = \SI{75,146}{Hz}
+\end{equation*}
+\\ermittelt.
+Die relative Messabweichung $f$ vom gemessenen Wert zum niedrigsten vom Gerät angegebenen Wert $\nu=\SI{80}{Hz}$ berechnet sich über
+\begin{equation}
+  f=\frac{x_{exp}-x_{theo}}{x_{theo}}
+  \label{eq:abw}
+\end{equation}
+\\und beläuft sich auf $6,07\%$.
+
+\FloatBarrier
+\subsection{Diskussion zu V502}
+Zunächst lässt sich sagen, dass die Messwerte nah an den Literaturwerten liegen.
+Dennoch liegen mögliche Fehlerquellen vor.
+Dazu gehören Störungen des induzierten Magnetfelds, Spannungsschwankungen des Stromnetzes, parallaxe Fehler und massive Störungen des Erdmagnetfeldes.
+Die Störungen des Erdmagnetfelds führen zur Ablenkung der Elektronen und haben ihren Ursprung meist bei elektrischen Geräten, die elektrische und magnetische Felder emittieren.
+Das Erdmagnetfeld kann außerdem durch die Beschaffenheit des Gebäudes abgeschirmt werden.
+\\Der mithilfe von Literaturwerten \cite{taschenrechner} errechnete Wert der spezifischen Elektronenladung beläuft sich auf
+\begin{equation*}
+  \frac{e_{0, theo}}{m_{0, theo}}= \SI{1,759e11}{\frac{C}{kg}}.
+\end{equation*}
+\\Der Mittelwert der Messwerte zur spezifischen Elektronenladung ergibt sich zu:
+\begin{equation*}
+  \frac{e_{0}}{m_{0}}= \SI{2,821e11}{\frac{C}{kg}}.
+\end{equation*}
+\\Die Abweichungen des Mittelwerts der Messwerte zum Literaturwert errechnen sich mit Gleichung \eqref{eq:abw} zu $f=\SI{60,37}{\%}$.
+\\Die zweite Messung beschäftigt sich mit dem lokalen Erdmagnetfeld.
+Gerade die Messung der Magnetfeldrichtung ist abhängig vom Ort der Messung sehr unterschiedlich.
+So ergibt sich bei der Messung eine Abweichung von bis zu $70°$ zu der Richtung, die als Norden bekannt ist und abgeschätzt wird.
+Als Literaturwert wird
+\begin{equation*}
+    B_{tot, theo}=\SI{48}{\mu T}
+\end{equation*}
+verwendet \cite{4}.
+\\Die gemessene totale Magnetfeldstärke beträgt:
+\begin{equation*}
+  B = \SI{0,053}{mT}=\SI{53}{\mu T}.
+\end{equation*}
+\\Die Abweichung dieser beiden Werte beläuft sich mit Gleichung \eqref{eq:abw} auf $f=\SI{9,4}{\%}$.
+\FloatBarrier

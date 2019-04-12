@@ -1,0 +1,115 @@
+\subsection{Gedämpfte Schwingungen}
+In einem Stromkreis mit einem Kondensator der Kapazität C und einer Spule der Induktivität L kann es zu ungedämpften Schwingungen des Stroms I, der Spannung U und der Energie kommen.
+Wird ein Widerstand R in den Stromkreis eingesetzt, werden aus den ungedämpften Schwingungen gedämpfte Schwingungen.
+Der Widerstand entfernt fortlaufend mit der Zeit Energie aus dem Stromkreis und die Amplituden der Schwingungen nehmen ab, bis sie nach einer gewissen Zeit gänzlich abgeklungen sind.
+\\Das zweite Kirchhoffsche Gesetz ergibt für diesen Schaltkreis folgende Gleichung:
+\begin{equation}
+  U_{R}(t) + U_{C}(t) + U_{L}(t) = 0.
+  \label{eqn:kirch2}
+\end{equation}
+\\Mit den Beziehungen
+\begin{equation*}
+  U_{R}(t) = R \cdot I(t),
+\end{equation*}
+\begin{equation*}
+  U_{C}(t) = \frac{Q(t)}{C},
+\end{equation*}
+\begin{equation*}
+  U_{L}(t) = L \cdot \frac{dI}{dt}
+\end{equation*}
+\begin{equation*}
+  I = \frac{dQ}{dt}
+\end{equation*}
+\\wird aus Formel \eqref{eqn:kirch2}:
+\begin{equation}
+  L \cdot \frac{dI}{dt} + R \cdot I + \frac{Q}{C} = 0.
+  \label{eqn:DGL1}
+\end{equation}
+\\Dabei ist Q die Ladung.
+\\Die DGL \eqref{eqn:DGL1} wird nun zeitlich abgeleitet und man erhält die DGL der gedämpften Schwingung:
+\begin{equation}
+  \frac{d^2 I}{d t^2} + \frac{R}{L} \frac{dI}{dt} + \frac{1}{LC} I = 0.
+\label{eqn:DGLgedämpft}
+\end{equation}
+\\Die Lösung der DGL \eqref{eqn:DGLgedämpft} lautet:
+\begin{equation}
+  I(t)= e^{-2 \pi \mu t} \left( U_{1} e^{i 2 \pi \nu t} + U_{2} e^{-i 2 \pi \nu t} \right)
+  \label{eqn:lsg}
+\end{equation}
+\\mit den Substitutionen
+\begin{equation}
+  \mu = \frac{R}{4 \pi L} \Leftrightarrow R_{eff}= 4 \pi L \mu
+  \label{eqn:mu}
+\end{equation}
+\begin{equation*}
+  \nu = \frac{1}{2 \pi} \sqrt{\frac{1}{LC} - \frac{R^2}{4 L^2}}.
+\end{equation*}
+\\Für $1/LC > R^2/4L^2$ ist \nu reell und aus Formel \eqref{eqn:lsg} ergibt sich:
+\begin{equation*}
+  I(t)= A_{0} \cdot e^{-2 \pi \mu t} \cdot \cos{(2 \pi \nu t + n)}.
+\end{equation*}
+\\Dazu wird die Abklingdauer
+\begin{equation}
+  T_{ex} = \frac{1}{2 \pi \mu} = \frac{2L}{R}
+  \label{eqn:tex}
+\end{equation}
+\\definiert, nach der die Amplitude auf den $1/e$-ten Teil abgesunken ist.
+\\Für $1/LC < R^2/4L^2$ ist \nu komplexwertig und aus Formel \eqref{eqn:lsg} ergibt sich:
+\begin{equation*}
+  I(t) \propto e^{-(2 \pi \mu - i 2 \pi \nu) t}.
+\end{equation*}
+\\Der aperiodische Grenzfall ist ein wichtiger Spezialfall.
+Dabei gilt
+\begin{equation}
+  \frac{1}{LC} = \frac{R_{ap}^2}{4 L^2} \Leftrightarrow R_{ap} = 2 \sqrt{\frac{L}{C}}
+  \label{eqn:rap}
+\end{equation}
+\\mit $\nu=0$.
+
+\subsection{Erzwungene Schwingungen}
+Der zuvor beschriebene Stromkreis wird nun um eine Erregerspannung
+\begin{equation}
+  U(t) = U_{0} e^{i \omega t}
+\end{equation}
+\\erweitert. Dabei ist \omega die Kreisfrequenz oder auch Winkelgeschwindigkeit und $U_{0}$ ist die Amplitude der Erregerspannung.
+\\Die DGL \eqref{eqn:DGL1} wird nun zu
+\begin{equation}
+    LC \cdot \frac{d^2 U_{C}}{dt^2} + RC \cdot \frac{d U_{C}}{dt} + U_{C} = U_{0} e^{i \omega t}.
+  \label{eqn:DGLerzwungen}
+\end{equation}
+\\Die Lösung der DGL \eqref{eqn:DGLerzwungen} lautet:
+\begin{equation*}
+  U(t) = \frac{U_{0}(1-LC \omega^2 - i \omega RC)}{(1- LC \omega^2)^2 + \omega^2 R^2 C^2}.
+\end{equation*}
+\\Die Phasenverschiebung \varphi kann dann durch
+\begin{equation}
+  \varphi (\omega) = \arctan{ \left( \frac{- \omega R C}{1- \omega^2 L C} \right) }
+  \label{eqn:varphi}
+\end{equation}
+\\beschrieben werden.
+\\Die Kondensatorspannung $U_{C}$ in Abhängigkeit der Winkelgeschwindigkeit \omega wird auch Resonanzkurve genannt und kann wie folgt angegeben werden:
+\begin{equation*}
+  U_{C}(\omega)= \frac{U_{0}}{\sqrt{\left( 1-\omega^2 LC \right)^2 + \omega^2 R^2 C^2}}.
+\end{equation*}
+\\Unter Beachtung der Beziehung $\omega=2 \pi \nu$ lautet die Resonanzfrequenz $\nu_{res}$ dann
+\begin{equation}
+  \nu_{res}= \frac{1}{2 \pi} \sqrt{\frac{1}{LC} - \frac{R^2}{2L^2} }.
+  \label{eqn:nuresonanz}
+\end{equation}
+\\Bei schwachen Dämpfungen gibt es eine auffällige Resonanzüberhöhung, die bis zur Resonanzkatastrophe reichen kann.
+Die Resonanzüberhöhung q wird durch die Halbwertsbreite der Resonanzkurve charakterisiert.
+Die Halbwertsbreite b ist hier ist der Abstand der Werte an denen die Funktion auf den $1/\sqrt{2}$-ten Teil des Maximums gewachsen bzw. abgefallen ist:
+\begin{equation}
+  b = \omega_{+} - \omega_{-} = \frac{R}{L}.
+  \label{eqn:halbwertsbreiten}
+\end{equation}
+\\Die Resonanzüberhöhung wird durch die folgende Gleichung beschrieben:
+\begin{equation}
+  q = \frac{1}{\omega_{0}RC} = \frac{\sqrt{L}}{R \sqrt{C}}.
+  \label{eqn:q}
+\end{equation}
+\\Aus Gleichung \eqref{eqn:varphi} kann für eine Verschiebung von $\pi/4$ und $3\pi/4$ folgende Beziehung entnommen werden:
+\begin{equation}
+  \nu_{1,2} = \pm \frac{R}{4 \pi L} + \frac{1}{2 \pi} \sqrt{\frac{R^2}{4 L^2} + \frac{1}{LC} }.
+  \label{eqn:phasenverschiebung}
+\end{equation}

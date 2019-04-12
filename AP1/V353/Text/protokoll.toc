@@ -1,0 +1,15 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Theorie}{2}
+\contentsline {subsection}{\numberline {1.1}Allgemeine Relaxationsgleichung}{2}
+\contentsline {subsection}{\numberline {1.2}Entladekurve eines Kondensators}{2}
+\contentsline {subsection}{\numberline {1.3}Relaxationsverhalten bei angelegten Wechselspannungen}{3}
+\contentsline {subsection}{\numberline {1.4}Integrationsverhalten des RC-Kreises}{3}
+\contentsline {section}{\numberline {2}Aufbau und Durchführung}{4}
+\contentsline {subsection}{\numberline {2.1}Messreihe zur Bestimmung der Zeitkonstanten im RC-Kreis}{4}
+\contentsline {subsection}{\numberline {2.2}Messreihe zur Bestimmung der Spannungsamplitude des Kondensators im RC-Kreis}{4}
+\contentsline {subsection}{\numberline {2.3}Messreihe zur Bestimmung der Phasenverschiebung im RC-Kreis}{4}
+\contentsline {subsection}{\numberline {2.4}Messreihe zur Bestätigung der Integratorfunktion des RC-Kreises}{5}
+\contentsline {section}{\numberline {3}Auswertung}{6}
+\contentsline {section}{\numberline {4}Diskussion}{12}

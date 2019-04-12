@@ -1,0 +1,3 @@
+In diesem Versuch wird die Funktionsweise eines Geiger-Müller-Zählrohrs untersucht.
+Es wird die Charakteristik und die Totzeit des Geiger-Müller-Zählrohrs bestimmt.
+Die freigesetzte Ladung pro Teilchen wird ermittelt.

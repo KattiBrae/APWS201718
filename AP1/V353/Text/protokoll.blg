@@ -1,0 +1,15 @@
+[0] Config.pm:302> INFO - This is Biber 2.8
+[1] Config.pm:305> INFO - Logfile is 'protokoll.blg'
+[86] biber-darwin:313> INFO - === Mi Nov 14, 2018, 21:28:50
+[124] Biber.pm:361> INFO - Reading 'protokoll.bcf'
+[328] Biber.pm:844> INFO - Using all citekeys in bib section 0
+[364] Biber.pm:3971> INFO - Processing section 0
+[395] Biber.pm:4144> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[399] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
+[406] bibtex.pm:1305> INFO - Found BibTeX data source 'lit.bib'
+[440] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[440] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[440] Biber.pm:3799> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[441] Biber.pm:3805> INFO - No sort tailoring available for locale 'de-DE'
+[444] bbl.pm:613> INFO - Writing 'protokoll.bbl' with encoding 'UTF-8'
+[445] bbl.pm:716> INFO - Output to protokoll.bbl

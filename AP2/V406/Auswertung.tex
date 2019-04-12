@@ -1,0 +1,66 @@
+Die Photodiode hat von dem Spalt den Abstand
+\begin{align*}
+  L=\SI{0,9}{m}.
+\end{align*}
+Der Laser leuchtet mit einer Wellenlänge von
+\begin{align*}
+  \lambda=\SI{635e-9}{nm}.
+\end{align*}
+Die Messung des Dunkelstroms ergibt:
+\begin{align*}
+  I_{\text{du}}=\SI{0,58}{nA}.
+\end{align*}
+Bei allen nachfolgenden Intensitäten wird der Dunkelstrom $I_{du}$ abgezogen um den realen Wert zu erhalten.
+Die maximale Intensität jeder Messung wird als Nullpunkt genommen.
+\subsection{Einzelspalt 1}
+Die Spaltbreite ist gegeben als:
+\begin{align*}
+  b=\SI{0,022e-3}{m}.
+\end{align*}
+Die gemessenen Werte sind in der Tabelle \ref{tab:1a} und in der Abbildung \ref{fig:1a} dargestellt.\\
+Mit Phython wird eine Ausgleichsrechnung nach der Form der Gleichung \ref{eqn:einzelspalt} bestimmt.
+Die durch Python errechnete Spaltbreite beträgt:
+\begin{align*}
+  b=\SI{0,045\pm0,001e-3}{m}.
+\end{align*}
+\input{1a.tex}
+\begin{figure}
+  \includegraphics{1a.pdf}
+  \caption{Einzelspalt 1}
+  \label{fig:1a}
+\end{figure}
+\FloatBarrier
+\subsection{Einzelspalt 2}
+Die Spaltgröße ist gegeben als:
+\begin{align*}
+  b=\SI{0,1e-3}{m}
+\end{align*}
+Die gemessenen Werte sind in der Tabelle \ref{tab:1b} und in der Abbildung \ref{fig:1b} dargestellt.\\
+Mit Phython wird erneut eine Ausgleichsrechnung mit Gleichung \ref{eqn:einzelspalt} ausgeführt.
+Die von Python berechnete Spaltbreite beträgt:
+\begin{align*}
+  b = \SI{0.29\pm0.01e-3}{m}.
+\end{align*}
+\input{1b.tex}
+\begin{figure}
+  \includegraphics{1b.pdf}
+  \caption{Einzelpalt 2}
+  \label{fig:1b}
+\end{figure}
+\FloatBarrier
+
+\subsection{Doppelspalt}
+Die Spaltgrößen $b$ und der Spaltabstand $s$ sind gegeben als:
+\begin{align*}
+  b=\SI{0,15e-3}{m}\\
+  g=\SI{0,25e-3}{m}.
+\end{align*}
+Die gemessenen Werte sind in der Tabelle \ref{tab:2} und in der Abbildung \ref{fig:2} dargestellt.
+Die nicht-lineare Ausgleichsrechnung nach Gleichung \ref{eqn:doppelspalt} wird mit Python bestimmt.
+\input{2.tex}
+\begin{figure}
+  \includegraphics{2.pdf}
+  \caption{Doppelspalt}
+  \label{fig:2}
+\end{figure}
+\FloatBarrier

@@ -1,0 +1,14 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{1}
+\contentsline {section}{\numberline {2}Theorie}{1}
+\contentsline {subsection}{\numberline {2.1}Gedämpfte Schwingungen}{1}
+\contentsline {subsection}{\numberline {2.2}Erzwungene Schwingungen}{3}
+\contentsline {section}{\numberline {3}Aufbau und Durchführung}{5}
+\contentsline {section}{\numberline {4}Auswertung}{7}
+\contentsline {subsection}{\numberline {4.1}Zeitabhängigkeit der Amplitude(Aufgabe a)}{7}
+\contentsline {subsection}{\numberline {4.2}Bestimmung des Dämpfungswiderstands (Aufgabe b)}{10}
+\contentsline {subsection}{\numberline {4.3}Frequenzabhängigkeit der Kondensatorspannung (Aufgabe c)}{11}
+\contentsline {subsection}{\numberline {4.4}Frequenzabhängigkeit der Phasenverschiebung (Aufgabe d)}{12}
+\contentsline {section}{\numberline {5}Diskussion}{13}

@@ -1,0 +1,3 @@
+Ziel des Versuches ist es die Funktionsweise eines Lock-In-Verstärker zu verstehen.
+Dazu wird ein Beispielsignal mit Rauschen und ohne Rauschen untersucht.
+Anschließend wird eine Photo-Detektor-Schaltung als Rauschen verwendet.

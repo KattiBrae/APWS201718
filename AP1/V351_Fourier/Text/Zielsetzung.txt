@@ -1,0 +1,1 @@
+Der Versuch hat einerseits das Ziel verschiedene Spannungsformen in Fourierkomponenten zu zerlegen, andererseits verschiedene Spannungsformen aus Fourierkomponenten zusammenzusetzen. 

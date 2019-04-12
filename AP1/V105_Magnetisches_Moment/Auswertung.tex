@@ -1,0 +1,124 @@
+\subsection{Methode über die Gravitation}
+Das B-Feld wird über die Formel \eqref{eqn:bfeld} bestimmt. $\mu_{0}$ wird dabei als\\
+\begin{equation*}
+  \mu_{0} = \SI{6.954318602} \cdot 10^{-6} \si{ \frac{N}{A^2}}
+\end{equation*}
+ angenommen.
+In der Anleitung werden die Windungszahl
+\begin{equation*}
+  N = 195
+\end{equation*}
+und der Radius
+\begin{equation*}
+  R = \SI{0.109}{m}
+\end{equation*}
+der Spule vorgegeben.
+Die Stromstärke und das dazu ausgerechnete B-Feld sind in der Tabelle \ref{tab:grav} nachzulesen.\\
+$\vec{\mu}_{Dipol}$ wird über die Formel \eqref{eqn:bmom1} berechnet.
+Dabei wurde m als
+\begin{equation*}
+  m = \SI{0.0014}{kg}
+\end{equation*}
+gemessen und
+\begin{equation*}
+  g = \SI{9.81}{\frac{m}{s^2}}
+\end{equation*}
+angenommen.
+$\frac{r}{B}$ ist die Steigung der Ausgleichsgeraden der Form
+\begin{equation*}
+  y = a \cdot x + b.
+\end{equation*}
+ Die Ausgleichsgrade ist in Abbildung \ref{fig:grav} zu sehen. Die Steigung beträgt
+\begin{equation*}
+  a=\SI{29.67322 \pm 0.079128}{\frac{m}{T}}.
+\end{equation*}
+Daraus ergibt sich ein $\vec{\mu}_{Dipol}$ von
+\begin{equation*}
+  \vec{\mu}_{Dipol} = \SI{0.40753 \pm 0.00109}{A m^2}.
+\end{equation*}
+\\Der Fehler wird mit Gauß berechnet:
+\begin{equation*}
+  \Delta \vec{\mu}_{Dipol}= \sqrt{m^2  \cdot g^2 \cdot \Delta a^2}.
+\end{equation*}
+
+\newpage
+\input{Gravitation.tex}
+\newpage
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Gravitation.pdf}
+    \caption{Gravitation}
+    \label{fig:grav}
+  \end{figure}
+
+\subsection{Methode über die Schwingungsdauer}
+$\vec{\mu}_{Dipol}$ wird für die Schwingung mit der Formel \eqref{eqn:bmom2} bestimmt.
+$J_k$ ist dabei
+
+\begin{equation}
+  J_k = \frac{2}{5} \cdot m_k \cdot r^2_k.
+\label{eqn:tr}
+\end{equation}
+\\$m_k$ ist als
+\begin{equation*}
+  m = \SI{0.124}{kg}
+\end{equation*}
+\\gemessen worden. $r_k$ beträgt
+\begin{equation*}
+  r_k = \SI{0.0269}{m}.
+\end{equation*}
+\\Für $J_k$ ergibt sich daraus ein Trägheitsmoment von
+\begin{equation*}
+  J_k = \SI{4.11e-5}{kg m^2}.
+\end{equation*}
+\\Die Steigung der Ausgleichsgeraden zu Tabelle \ref{tab:schwing} in Abbildung \ref{fig:schwing} ist ${T^2B} $  und hat den Wert
+\begin{equation*}
+  a=\SI{3.91031108 \pm 0.00390843} \cdot 10^{-3} \si{T s^2}.
+\end{equation*}
+\\In die Formel \eqref{eqn:bmom2} eingesetzt ergibt sich für $\vec{\mu}_{Dipol}$ ein Wert von\\
+\begin{equation*}
+  \vec{\mu}_{Dipol} = \SI{0.4149457 \pm 0.0000001}{A m^2}
+\end{equation*}
+Der Fehler wird mit Gauß berechnet:
+\begin{equation*}
+  \Delta \vec{\mu}_{Dipol}= \sqrt{\frac{(2 \pi)^4 J_{K}^2}{a^4} \cdot \Delta a^2}.
+\end{equation*}
+
+\input{Schwingung.tex}
+\newpage
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=\textwidth]{Schwingung.pdf}
+   \caption{Schwingung}
+   \label{fig:schwing}
+ \end{figure}
+
+\subsection{Methode über die Präzession}
+Mit der Formel \eqref{eqn:bmom3} lässt sich $\vec{\mu}_{Dipol}$ für die Präzession bestimmen.
+Der Drehimpuls wird berechnet durch \eqref{eqn:lk}. $\nu$ ist hierbei $\nu = \SI{6}{Hz}$.
+$J_k$ kann aus dem Aufgabenteil der Schwingung entnommen werden.
+\\Für $L_k$ ergibt sich ein Wert von
+\begin{equation*}
+  L_k = \SI{1.5494e-3}{\frac{kg m}{s}}.
+\end{equation*}
+Die Steigung der Ausgleichsgeraden zu Tabelle \ref{tab:präzession} in Abbildung \ref{fig:präzession} beträgt\\
+\begin{equation*}
+ m=\SI{43.67214 \pm 0.00093}{\frac {1}{s T}}.
+\end{equation*}
+ $\vec{\mu}_{Dipol}$ kann somit auf\\
+\begin{equation*}
+  \vec{\mu}_{Dipol} = \SI{0.42515559 \pm 0.000000009}{A m^2}
+\end{equation*}
+ bestimmt werden. Der Fehler wird mit Gauß berechnet.\\
+\begin{equation*}
+  \Delta \vec{\mu}_{Dipol}=\sqrt{ (2 \pi)^2 {L_K}^2 \cdot \Delta a^2}.
+\end{equation*}
+
+\newpage
+\input{Präzession.tex}
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=\textwidth]{Präzession.pdf}
+   \caption{Präzession}
+   \label{fig:präzession}
+ \end{figure}

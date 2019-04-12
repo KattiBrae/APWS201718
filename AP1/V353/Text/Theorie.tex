@@ -1,0 +1,85 @@
+\subsection{Allgemeine Relaxationsgleichung}
+
+Eine Relaxationszeit ist die Zeit,
+die zwischen dem Auslenken eines Systems aus einem Ausgangszustand und dem Zurückkehren in den Ausgangszustand vergeht.
+Dies gilt jedoch nicht für schwingende Systeme.
+In diesem Versuch wird die Entladung eines Kondensators über einen Widerstand als Beispiel für ein Relaxationsphänomen gewählt.
+\\Nun wird zunächst allgemein die Änderungsgeschwindigkeit einer Größe A betrachtet.
+Sie ist abhängig vom Grenzwert der Größe $A(\infty)$.
+\\Aus
+\begin{equation}
+  \frac{dA}{dt} = c[A' - A(\infty)]
+  \label{eqn:danachdt}
+\end{equation}
+\\folgt
+\begin{equation}
+  A(t) = A(\infty) + [A(0)-A(\infty)] \cdot e^{ct}
+  \label{eqn:allrelax}
+\end{equation}
+\\Dabei muss c < 0 sein, da A(t) sonst nicht beschränkt ist.
+
+\subsection{Entladekurve eines Kondensators}
+Auf einem Kondensator mit der Kapazität C und der Ladung Q liegt eine Spannung $U_{C}$ an:
+\begin{equation*}
+  U_{C}= \frac{Q}{C}.
+\end{equation*}
+\\Die Spannung führt zu dem Strom I durch den Widerstand R (Ohm'sches Gesetz):
+\begin{equation*}
+  I = \frac{U_{C}}{R}.
+\end{equation*}
+\\Auf dem Kondensator verändert sich die Ladung Q pro Zeiteinheit um
+\begin{equation*}
+  dQ = -Idt.
+\end{equation*}
+\\Daraus ergibt sich die Gleichung
+\begin{equation}
+  \frac{dQ}{dt} = - \frac{Q(t)}{RC},
+  \label{eqn:dgl1}
+\end{equation}
+\\die eine ähnliche Form wie Formel \eqref{eqn:danachdt} hat.
+\\Daraus ergibt sich unter Beachtung des nicht erreichbaren Grenzwerts Q(\infty)
+\begin{equation}
+  Q(t)= Q(0) \cdot e^{-\frac{t}{RC}}
+  \label{eqn:Entladekurve}
+\end{equation}
+
+\subsection{Relaxationsverhalten bei angelegten Wechselspannungen}
+Allgemein kann eine Wechselspannung durch folgende Gleichung ausgedrückt werden:
+\begin{equation}
+  U(t)= U_{0} \cdot \cos(\omega t).
+  \label{eqn:acdcein}
+\end{equation}
+\\Es bildet sich eine Phasenverschiebung \phi zwischen der eingehenden Wechselspannung und der vom Kodensator verzögerten ausgehenden Wechselspannung aus.
+\\Damit kann man die ausgehende Wechselspannung als
+\begin{equation}
+  U_{C}(t)= A(\omega) \cdot \cos(\omega t + \phi (\omega))
+  \label{eqn:acdcaus}
+\end{equation}
+\\beschrieben werden, mit der Kondensatorspannungsamplitude A.
+\\Des weiteren gilt
+\begin{equation}
+  I(t) = \frac{dQ}{dt} = C \frac{d U_{C}}{dt}
+  \label{eqn:dgl2}
+\end{equation}
+\\Aus den Kirchhoff'schen Gesetzen, der Formel \eqref{eqn:dgl1}, Formel \eqref{eqn:dgl2} und weiteren Überlegungen folgt dann
+\begin{equation}
+  A(\omega) = \frac{U_{0}}{\sqrt{1+ \omega^2 R^2 C^2}}.
+  \label{eqn:ampkond}
+\end{equation}
+
+\subsection{Integrationsverhalten des RC-Kreises}
+Ein RC-Kreis kann unter gewissen Vorraussetzungen als Integrator dienen.
+Hierfür muss $\omega \gg \frac{1}{RC}$ sein.
+Folgende Gleichung
+\begin{equation*}
+  U(t)= U_{R}(t) + U_{C}(t) = R \cdot I(t) + U_{C}(t)
+\end{equation*}
+\\führt zu
+\begin{equation*}
+  U(t)= RC \cdot \frac{d U_{C}(t)}{dt} + U_{C}(t).
+\end{equation*}
+Unter der Vorraussetzung $\omega \gg \frac{1}{RC}$ folgt dann:
+\begin{equation}
+  U_{C}(t) = \frac{1}{RC} \int_{0}^{t} \! U(t')dt'
+  \label{eqn:integrator}
+\end{equation}

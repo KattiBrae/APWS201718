@@ -1,0 +1,121 @@
+\subsection{Absorption von $\gamma$-Strahlung}
+Für den theoretischen Wert des Absorptionskoeffizient wird zunächst der Compton'sche Wirkungsquerschnitt nach Gleichung \eqref{eqn:sigma} berechnet.
+Dafür ist das Verhältnis von Quantenenergie des $^{137}Cs$ zur Ruheenergie des Elektrons gegeben \cite{1}:
+\begin{align*}
+  \epsilon=\SI{1.295}{}.
+\end{align*}
+Damit ergibt sich der Compton'sche Wirkungsquerschnitt zu:
+\begin{align*}
+  \sigma_{\text{com}}= \SI{2.566e-29}{\frac{1}{m}}.
+\end{align*}
+Die beiden verwendeten Absorber sind Eisen und Blei mit den folgenden Eigenschaften \cite{fe}, \cite{pb}:
+\input{para.tex}
+Dabei ist $u=\SI{1.6605e-27}{kg}$ die Atomare Masseneinheit und $N_{\text{A}}=\SI{6.022e23}{\frac{1}{mol}}$ \cite{taschenrechner}.
+Die Absorptionskoeffizienten berechnen sich nach Gleichung \eqref{eqn:koeff} zu:
+\begin{align*}
+  \mu_{\text{com, Fe}}= \SI{56.647}{\frac{1}{m}}\\
+  \mu_{\text{com, Pb}}= \SI{69.360}{\frac{1}{m}}.\\
+\end{align*}
+Ein statistischer Fehler der Zählrate in der Strahlenphysik berechnet sich über
+\begin{align*}
+  \Delta N = \sqrt{N}
+\end{align*}
+\\Die Hintergrundstrahlung wird als
+\begin{align*}
+   N_{\text{U1}}=\SI{1229\pm35}{}
+\end{align*}
+Impulse innerhalb $t_{\text{U1}}=\SI{1000}{s}$ gemessen. Damit ergibt sich die Rate
+\begin{align*}
+  \frac{N_{\text{U1}}}{t_{\text{U1}}}=\SI{1.229 \pm 0.035}{\frac{1}{s}}
+\end{align*}
+Die Messwerte zur Absorption der $\gamma$-Strahlung sind für den Absorber Blei und den Absorber Eisen in den Tabellen \ref{tab:pb} und \ref{tab:fe} notiert.
+In den Abbildungen \ref{fig:pb} und \ref{fig:fe} sind die Messwerte absorberabhängig aufgetragen.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{fe.pdf}
+  \caption{Absorptionskurve $\beta$-Strahlung für Eisen}
+  \label{fig:fe}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{pb.pdf}
+  \caption{Absorptionskurve $\beta$-Strahlung für Blei}
+  \label{fig:pb}
+\end{figure}
+\input{fe.tex}
+\input{pb.tex}
+Die lineare Regressionen der Form $y=ax+b$ der Messwerte mittels Python liefern die Parameter
+\begin{align*}
+  &\text{Eisen}   &   \\
+  &c= -\mu_{\text{Fe}} = &\SI{-48.245 \pm 1.054}{\frac{1}{m}}\\
+  &d= &\SI{4.977 \pm 6.72e-04}{}\\
+  &\text{Blei}    &   \\
+  &a= -\mu_{\text{Pb}} = &\SI{-108.944 \pm 3.761}{\frac{1}{m}}\\
+  &b= &\SI{5.035 \pm 2.14e-03}{}\\.
+\end{align*}
+Dabei entsprechen die Steigungen den negativen Absorptionskoeffizienten $-\mu$.
+\FloatBarrier
+
+\subsection{Absorption von $\beta$-Strahlung}
+Als Dichte des Aluminiums wird
+\begin{align*}
+  \rho_{\text{Al}}=\SI{2.71}{\frac{g}{cm^3}}= \SI{2710}{\frac{kg}{m^3}}
+\end{align*}
+verwendet \cite{2}.
+Die Massenbelegung $R$ berechnet sich mit Gleichung \eqref{eqn:massenbelegung}.
+Die Messung der Hintergrundstrahlung ergibt sich zu
+\begin{align*}
+  N_{\text{U2}}= \SI{614 \pm 25}{}
+\end{align*}
+in $t_{\text{U2}}=\SI{1000}{s}$.
+Damit errechnet sich die Zählrate zu
+\begin{align*}
+  \frac{N_{\text{U2}}}{t_{\text{U2}}}=\SI{0.614 \pm 0.025}{\frac{1}{s}}
+\end{align*}
+Die Messwerte zur Absorption der $\beta$-Strahlung sind in Tabelle \ref{tab:beta} zu finden.
+\input{beta.tex}
+Die Messwerte $R$ und die Intensität $\frac{N}{t}-\frac{N_{U}}{t_{U}}$ sind halblogarithmisch in Abbildung \ref{fig:beta} aufgetragen.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{beta.pdf}
+  \caption{Absorptionskurve $\beta$-Strahlung}
+  \label{fig:beta}
+\end{figure}
+Die lineare Regression der Absorptionskurve der Form $y=ex+f$ (orange) mit Python liefert die Parameter
+\begin{align*}
+  e=& \SI{-11.255 \pm 2.670}{m^2/kg} \\
+  f=& \SI{6.506 \pm 0.450}{}.
+\end{align*}
+Die lineare Regression der Hintergrundstrahlung der Form $y=gx+h$ (grün) mittels Python ergibt die Parameter
+\begin{align*}
+  g=& \SI{-1.141 \pm 0.358}{m^2/kg}\\
+  h=& \SI{-1.140 \pm 0.376}{}.
+\end{align*}
+Der Schnittpunkt der beiden Geraden berechnet sich über $ex+f=gx+h$:
+\begin{align*}
+  R_{\text{max}}=x=\frac{h-f}{e-g}.
+\end{align*}
+Der Fehler berechnet sich über die Gauß'sche Fehlerfortpflanzung
+\begin{align*}
+  \Delta R_{\text{max}}&  =\sqrt{ \left( \frac{\partial x}{\partial e} \right)^2 \Delta e^2 + \left( \frac{\partial x}{\partial f} \right)^2 \Delta f^2 + \left( \frac{\partial x}{\partial g} \right)^2 \Delta g^2 + \left( \frac{\partial x}{\partial h} \right)^2 \Delta h^2 }\\
+          &=\sqrt{ \left( \frac{f-h}{(e-g)^2} \right)^2\Delta e^2 + \left( -\frac{1}{e-g} \right)^2\Delta f^2 +\left( \frac{h-f}{(e-g)^2} \right)^2\Delta g^2 +\left( \frac{1}{e-g} \right)^2\Delta h^2} \\
+          &= \SI{0.209}{kg/m^2}.
+\end{align*}
+Damit ergibt sich $R_{\text{max}}$ zu
+\begin{align*}
+  R_{\text{max}}=\SI{0.757 \pm 0.209}{kg/m^2}= \SI{0.0757 \pm 0.0209}{g/cm^2}.
+\end{align*}
+Als maximale Energie ergibt sich nach
+\begin{align*}
+  E_{\text{max}}= 1,92 \sqrt{R_{\text{max}}^2 + 0,22 R_{\text{max}}}= \SI{0.287}{MeV}
+\end{align*}
+Die Gauß'sche Fehlerfortpflanzung ergibt
+\begin{align*}
+  \Delta E_{\text{max}}=\sqrt{ \left( 1,92 \frac{0,22+2 R_{\text{max}}}{2 \sqrt{R_{\text{max}}(0,22 + R_{\text{max}})}} \right)^2 \Delta R_{\text{max}}^2}= \SI{0.050}{MeV}.
+\end{align*}
+Damit beläuft sich die maximale Energie zu
+\begin{align*}
+  E_{\text{max}}= \SI{0.287 \pm 0.050}{MeV}.
+\end{align*}
+
+\FloatBarrier

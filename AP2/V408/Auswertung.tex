@@ -1,0 +1,114 @@
+\subsection{Messung der Brennweite über die Linsengleichung}
+Die Messwerte der Gegenstandsweite $g$ und der Bildweite $b$ zu beiden verwendeten Linsen sind in Tabelle \ref{tab:brennweite} notiert.
+Die Brennweiten werden mithilfe von Gleichung \eqref{eqn:linse} berechnet.
+\input{brennweite.tex}
+Der Mittelwert $\mu$ berechnet sich allgemein über
+\begin{align}
+  \overline{x}= \frac{1}{N} \sum_{n=1}^{N} x_{n}.
+  \label{eqn:mu}
+\end{align}
+Der Fehler, der durch das Mitteln gemacht wird, entspricht der Standardabweichung $\sigma$:
+\begin{align}
+  \sigma= \sqrt{ \frac{1}{N-1} \sum_{n=1}^{N} ( x_{n} - \overline{x})^2}.
+  \label{eqn:std}
+\end{align}
+Die gemittelten Brennweiten ergeben sich dann zu:
+\begin{align*}
+  \overline{f_{1}} &=& \SI{0.09896 \pm 0.00076}{m}\\
+  \overline{f_{2}} &=& \SI{0.05019 \pm 0.00069}{m}.\\
+\end{align*}
+Desweiteren werden die Werte der Bildweite $b$ gegen die Gegenstandsweiten $g$ aufgetragen (Abb. \ref{fig:f100}, \ref{fig:f50}).
+Die Wertepaare werden durch eine Gerade verbunden um die Messgenauigkeit graphisch darzustellen.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{f100.pdf}
+  \caption{Darstellung der Messgenauigkeit für $f_{\text{1, theo}}=\SI{0.1}{m}$}
+  \label{fig:f100}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{f50.pdf}
+  \caption{Darstellung der Messgenauigkeit für $f_{\text{2, theo}}=\SI{0.05}{m}$}
+  \label{fig:f50}
+\end{figure}
+In beiden Abbildungen entspricht jeweils $g$- und $b$-Koordinate des Schnittpunkts aller Geraden der Brennweite.
+So liegt in Abbildung \ref{fig:f100} der Schnittpunkt etwa bei $g=b=\SI{0.1}{m}$, was zu der Brennweite $f_{\text{1, theo}}=\SI{0.1}{m}$ passt.
+In Abbildung \ref{fig:f50} liegt der Schnittpunkt bei $g=b=\SI{0.05}{m}$.
+Diese Werte entsprechen ebenfalls zu der angegebenen Brennweite $f_{\text{2, theo}}=\SI{0.05}{m}$ der Linse.
+\FloatBarrier
+
+\subsection{Messung der Brennweite nach Bessel}
+\label{kap:bessel}
+Die gemessenen Brennweiten und Gegenstandsweiten sind in Tabelle \ref{tab:bessel} notiert.
+\input{bessel.tex}
+Für die Bestimmung des Abstands $d$ zwischen den Linsen werden die Abstände $d_{1}$ und $d_{2}$ nach Gleichung \eqref{eqn:mu} gemittelt.
+Der Fehler der Messung ergibt sich über die Standardabweichung nach Gleichung \eqref{eqn:std}.
+Die Brennweite wird über Gleichung \eqref{eqn:bessel} berechnet.
+Die Fehler berechnen sich nach der Gauß'schen Fehlerfortpflanzung:
+\begin{align*}
+  \Delta f_{1}= \sqrt{ \left( \frac{df}{d d} \right)^2 \Delta d^2 }= \sqrt{ \left( -\frac{d}{2e}\right)^2 \Delta d^2}.
+\end{align*}
+Die einzelnen Brennweiten werden nun nach Gleichung \eqref{eqn:mu} gemittelt und der Fehler über die Standardabweichung nach Gleichung \eqref{eqn:std} ermittelt:
+\begin{align*}
+  \overline{f_{1}}= \SI{0.1013 \pm 0.0008}{m}.
+\end{align*}
+\FloatBarrier
+
+\subsection{Untersuchung der chromatischen Abberation}
+Die Messdaten zur Untersuchung der chromatischen Abberation sind in Tabelle \ref{tab:chrom} aufgetragen.
+\input{chrom.tex}
+Die Rechnungen werden analog zu Kapitel \ref{kap:bessel} durchgeführt.
+Die Brennweiten $f$ werden nach Gleichung \eqref{eqn:mu} emittelt.
+Es ergeben sich die Brennweiten
+\begin{align*}
+  \overline{f_{\text{blau}}} &=& \SI{0.1012 \pm 0.0008}{m}\\
+  \overline{f_{\text{rot}}}  &=& \SI{0.1022 \pm 0.0008}{m}.\\
+\end{align*}
+
+\FloatBarrier
+
+\subsection{Messung der Brennweite und Hauptebenen nach Abbe}
+Die Messdaten sind in Tabelle \ref{tab:abbe} notiert.
+\input{abbe.tex}
+Der Abbildungsmaßstab $V$ wird nach Gleichung \eqref{eqn:maßstab} errechnet.
+\\In Abbildung \ref{fig:abbe1} ist die Gegenstandsweite $g'$ gegen $1+\frac{1}{V}$ aufgetragen.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{abbe1.pdf}
+  \caption{$g'$ gegen $1+\frac{1}{V}$ zur Bestimmung der Brennweite $f$ und der Hauptebene $h$}
+  \label{fig:abbe1}
+\end{figure}
+Die Gegenstandsweite $g'$ hat einen linearen Zusammenhang zur Brennweite $f$:
+\begin{align*}
+  g' &=& f && \left(1+\frac{1}{V} \right) && + h && && &&\\
+  y  &=& a && x                           && + b.&& && &&\\
+\end{align*}
+Die lineare Regression der Form mithilfe von Python ergibt die Parameter:
+\begin{align*}
+  a = f &=& \SI{0.1455 \pm 0.0041}{m}\\
+  b = h &=& \SI{0.1355 \pm 0.0158}{m}.\\
+\end{align*}
+\\Zur Bestimmung der zweiten Hauptebene $h'$ und der Brennweite $f$ wird der lineare Zusammenhang dieser Größen zur Bildweite $b'$ genutzt:
+\begin{align*}
+  b' &=& f && (1+V) && + h' && && &&\\
+  y  &=& c && x     && + d. && && &&\\
+\end{align*}
+Es wird also $b'$ gegen $1+V$ in Abbildung \ref{fig:abbe2} aufgetragen.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{abbe2.pdf}
+  \caption{$b'$ gegen $1+V$ zur Bestimmung der Brennweite $f$ und der Hauptebene $h'$}
+  \label{fig:abbe2}
+\end{figure}
+Es ergeben sich die Parameter
+\begin{align*}
+  c = f  &=& \SI{ 0.1683 \pm 0.0035}{m}\\
+  d = h' &=& \SI{-0.0818 \pm 0.0051}{m}.\\
+\end{align*}
+Die gemittelte Brennweite beläuft sich zu
+\begin{align*}
+  \overline{f_{\text{Abbe}}}= \SI{0.1569 \pm 0.0161}{m}.
+\end{align*}
+
+
+\FloatBarrier

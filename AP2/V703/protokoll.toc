@@ -1,0 +1,12 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}
+\contentsline {section}{\numberline {2}Theorie}{3}
+\contentsline {section}{\numberline {3}Aufbau und Durchführung}{8}
+\contentsline {section}{\numberline {4}Auswertung}{9}
+\contentsline {subsection}{\numberline {4.1}Charakteristik des Zählrohres}{9}
+\contentsline {subsection}{\numberline {4.2}Bestimmung der Totzeit mit der Zwei-Quellen-Methode}{10}
+\contentsline {subsection}{\numberline {4.3}Bestimmung der Totzeit mit Hilfe des Oszilloskops}{10}
+\contentsline {subsection}{\numberline {4.4}Freigesetzte Ladung pro Teilchen}{11}
+\contentsline {section}{\numberline {5}Diskussion}{13}

@@ -1,0 +1,27 @@
+%Schallgeschwindigkeiten
+%Innendurchmesser der Rohre
+%
+Die Messaperatur besteht aus einem Schallkopf($f=\SI{2}{MHz}$), einem Ultraschallgerät und einem Rechner, der für die Datenaufnahme und die Datenanalyse zuständig ist.
+Untersucht wird die Strömung einer viskosen Flüssigkeit in einem Rohrsystem. Eine Zentrifugalpumpe sorgt für einen konstanten Volumenstrom.
+In dem Rohrsystem gibt es drei zu messende Strömungsrohre mit unterschiedlichen Innendurchmessern. Desweiteren werden für das Ankoppeln der Ultraschallsonde an die Rohre Dopplerprismen verwendet.
+Die Dopplerprismen garantieren einen reproduzierbaren Einstrahlwinkel.  Die Entfernung zwischen Sonde und Rohr ist für alle Einstellungen gleich.
+Der Dopplerwinkel $\alpha$ ist abhängig von dem Brechungsgesetz und der Schallgeschwindigkeit $c_\text{L}$ des Dopplermediums und der Schallgeschwindigkeit $c_\text{P}$ im Prismenmaterial.
+\begin{align}
+  \alpha=90°-\text{arcsin}\left(\text{sin}\theta\cdot \frac{C_L}{C_P}\right)
+  \label{eqn:alpha}
+\end{align}
+\\Für 5 Geschwindigkeiten wird an den drei Rohren die Ultraschallmessung, zur Bestimmung der Frequenzverscheibung $\Delta\nu$, für alle drei Winkel durchgeführt.
+Mit Hilfe von $\Delta\nu$ kann die Strömungsgeschwindigkeit ermittelt werden.
+\\Nun wird das Strömungsprofil der Dopplerflüssigkeit untersucht. Dazu wird am Strömungsrohr, mit dem Innendurchmesser von $\SI{10}{mm}$, unter einem 15° Winkel, für unterschiedliche Pumpleistungen, eine Untersuchung mit variabler Meßtiefe durchgeführt.
+Es wird die Strömungsgeschwindigkeit und die Streuintensität gemessen.
+\begin{align*}
+  \text{Strömungsrohre}:&& \text{Innendurchmesser}\\
+               &&    \SI{7}{mm}\\
+               &&    \SI{10}{mm}\\
+               &&    \SI{16}{mm}\\
+\end{align*}
+\begin{align*}
+  \text{Dopplerprisma}:&&c_\text{P}=\SI{2700}{\frac{m}{s}}&&\text{Schallgeschwindigkeit}\\
+                       &&l=\SI{30,7}{mm}&&\text{Länge der Vorlaufstrecke}\\
+  \text{Dopplerflüssigkeit}: && c_\text{L}=\SI{1800}{\frac{m}{s}} && \text{Schallgeschwindigkeit}\\
+\end{align*}

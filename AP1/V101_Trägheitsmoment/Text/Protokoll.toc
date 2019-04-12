@@ -1,0 +1,23 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{2}
+\contentsline {section}{\numberline {2}Theorie}{2}
+\contentsline {section}{\numberline {3}Aufbau und Durchführung}{4}
+\contentsline {section}{\numberline {4}Auswertung}{5}
+\contentsline {subsection}{\numberline {4.1}Winkelrichtgröße}{5}
+\contentsline {subsection}{\numberline {4.2}Eigenträgheitsmoment}{6}
+\contentsline {subsection}{\numberline {4.3}Trägheitsmoment des ersten Körpers}{8}
+\contentsline {subsubsection}{\numberline {4.3.1}Theoretische Werte}{8}
+\contentsline {subsubsection}{\numberline {4.3.2}Experimentelle Werte}{8}
+\contentsline {subsection}{\numberline {4.4}Trägheitsmoment des zweiten Körpers}{9}
+\contentsline {subsubsection}{\numberline {4.4.1}Theoretische Werte}{9}
+\contentsline {subsubsection}{\numberline {4.4.2}Experimentelle Werte}{9}
+\contentsline {subsection}{\numberline {4.5}Abmessungen der Puppe}{9}
+\contentsline {subsection}{\numberline {4.6}Trägheitsmoment der Puppe, erste Körperhaltung}{12}
+\contentsline {subsubsection}{\numberline {4.6.1}Theoretische Werte}{12}
+\contentsline {subsubsection}{\numberline {4.6.2}Experimentelle Werte}{13}
+\contentsline {subsection}{\numberline {4.7}Trägheitsmoment der Puppe, zweite Körperhaltung}{13}
+\contentsline {subsubsection}{\numberline {4.7.1}Theoretische Werte}{13}
+\contentsline {subsubsection}{\numberline {4.7.2}Experimentelle Werte}{14}
+\contentsline {section}{\numberline {5}Diskussion}{15}

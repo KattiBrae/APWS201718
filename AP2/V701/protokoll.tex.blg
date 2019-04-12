@@ -1,0 +1,5 @@
+[0] Config.pm:302> INFO - This is Biber 2.8
+[1] Config.pm:305> INFO - Logfile is 'protokoll.tex.blg'
+[98] biber-darwin:313> INFO - === Mo Jun 25, 2018, 19:20:11
+[343] Utils.pm:185> ERROR - Cannot find control file 'protokoll.tex.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[344] Biber.pm:114> INFO - ERRORS: 1

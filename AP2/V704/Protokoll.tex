@@ -1,0 +1,41 @@
+\input{lade.tex}
+\begin{document}
+\input{Titelseite.tex}
+%\input{lit.bib}
+
+\newpage
+
+\section{Zielsetzung}
+\input{Zielsetzung.txt}
+
+
+\section{Theorie}
+\input{Theorie.tex}
+
+
+\section{Aufbau und Durchführung}
+\input{Durchführung.tex}
+\newpage
+\FloatBarrier
+
+\section{Auswertung}
+\input{Auswertung.tex}
+\FloatBarrier
+
+\section{Diskussion}
+\input{Diskussion.tex}
+
+
+\nocite{*}
+\printbibliography
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{OMD.pdf}
+  \caption{Originale Messdaten}
+  \label{OMD}
+\end{figure}
+
+%\newpage
+
+\end{document}

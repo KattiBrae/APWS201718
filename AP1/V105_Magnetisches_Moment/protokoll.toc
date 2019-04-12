@@ -1,0 +1,19 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{2}
+\contentsline {section}{\numberline {2}Theorie}{2}
+\contentsline {subsection}{\numberline {2.1}Allgemeine Theorie}{2}
+\contentsline {subsection}{\numberline {2.2}Bestimmung des magnetischen Momentes unter Ausnutzung der Gravitation}{2}
+\contentsline {subsection}{\numberline {2.3}Bestimmung des magnetischen Momentes über die Schwingungsdauer eines Magneten}{3}
+\contentsline {subsection}{\numberline {2.4}Bestimmung des magnetischen Momentes über die Präzession einer Kugel}{3}
+\contentsline {section}{\numberline {3}Aufbau und Durchführung}{4}
+\contentsline {subsection}{\numberline {3.1}Aufbau}{4}
+\contentsline {subsection}{\numberline {3.2}Durchführung der Bestimmung des magnetischen Momentes unter Ausnutzung der Gravitation}{4}
+\contentsline {subsection}{\numberline {3.3}Durchführung der Bestimmung des magnetischen Momentes über die Schwingungsdauer des Magneten}{5}
+\contentsline {subsection}{\numberline {3.4}Durchführung der Bestimmung des magnetischen Momentes über die Präzession der Billardkugel}{5}
+\contentsline {section}{\numberline {4}Auswertung}{6}
+\contentsline {subsection}{\numberline {4.1}Methode über die Gravitation}{6}
+\contentsline {subsection}{\numberline {4.2}Methode über die Schwingungsdauer}{8}
+\contentsline {subsection}{\numberline {4.3}Methode über die Präzession}{10}
+\contentsline {section}{\numberline {5}Diskussion}{13}

@@ -1,0 +1,15 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{2}
+\contentsline {section}{\numberline {2}Theorie}{2}
+\contentsline {section}{\numberline {3}Aufbau und Durchführung}{3}
+\contentsline {section}{\numberline {4}Auswertung}{5}
+\contentsline {subsection}{\numberline {4.1}Leerlaufspannung und Eigenwiderstand (Messreihe a)}{5}
+\contentsline {subsection}{\numberline {4.2}Klemmenspannung an der Monozelle (Messreihe b)}{5}
+\contentsline {subsection}{\numberline {4.3}Klemmenspannung mit der Gegenspannung (Messreihe c)}{6}
+\contentsline {subsection}{\numberline {4.4}Klemmenspannung mit der Rechteck- und Sinusspannung (Messreihe d)}{8}
+\contentsline {subsection}{\numberline {4.5}Systematischer Fehler der $U_{0}$-Messung (Aufgabe c)}{11}
+\contentsline {subsection}{\numberline {4.6}Systematischer Fehler bei nachgeschaltetem Voltmeter (Aufgabe d)}{12}
+\contentsline {subsection}{\numberline {4.7}Umgesetzte Leistung (Aufgabe e)}{12}
+\contentsline {section}{\numberline {5}Diskussion}{13}

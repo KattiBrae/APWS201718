@@ -1,0 +1,67 @@
+\section{Zielsetzung}
+Ziel des Versuches ist es das Trägheitsmoment unterschiedlicher Körper zu ermitteln.
+Zusätzlich wird der Satz von Steiner verifiziert.
+
+
+\section{Theorie}
+Rotationsbewegungen lassen sich durch das Drehmoment M, die Winkelbeschleunigung $\dot{\omega} $ und das Trägheitsmoment I beschreiben.
+Das Trägheitsmoment beschreibt die Massenverteilung eines Körpers im Bezug auf die Rotationsachse.
+Das Gesamtträgheitsmoment lässt sich dabei beschreiben durch
+
+\begin{equation*}
+  I = \sum_i r_i^2 \cdot m_i.
+\end{equation*}
+\\$m_i$ ist dabei ein Massenelement mit dem Abstand $r_i$ zur Drehachse. Für infinitesimale Körper ergibt sich
+
+\begin{equation*}
+  I = \int r^2 dm.
+\end{equation*}
+\\Geht die Drehachse nicht durch den Schwerpunkt des Körpers muss das Trägheitsmoment durch den Satz von Steiner beschrieben werden:
+
+\begin{equation}
+  I = I_s + m \cdot a^2.
+  \label{eqn:steiner}
+\end{equation}
+\\$I_s$ ist dabei das Tragheitsmoment bezüglich der Drehachse des Schwerpunktes.
+Für das Drehmoment M eines Körpers auf den die Kraft F im Abstand r wirkt, gilt die Formel:
+
+\begin{equation*}
+  \vec{M} = \vec{F}\times \vec{r}.
+\end{equation*}
+\\Stehen F und r senkrecht zueinander gilt
+
+\begin{equation*}
+  M = F\cdot r.
+\end{equation*}
+\\Bei schwingenden System wirkt der Auslenkung $\phi$ ein rücktreibendes Drehmoment entgegen, welches beschrieben wird durch:
+
+\begin{equation*}
+  M = D \cdot \phi
+\end{equation*}
+\\mit der Winkelrichtgröße D.
+\\Die Schwingungsdauer beträgt
+
+\begin{equation}
+  T = 2\pi\sqrt\frac{I}{D}.
+\label{eqn:schwing}
+\end{equation}
+\\Die Formel gilt jedoch nur für kleine Winkel. Sie lässt sich umstellen zu
+\begin{equation}
+  I = \frac{T^2 \cdot D}{(2 \pi)^2}.
+\label{eqn:schwing2}
+\end{equation}
+\\Das Trägheitsmoment I eines Zylinders, bei dem die Drehachse durch den Schwerpunkt geht und senkrecht zur Bodenfläche steht, ist das Trägheitsmoment
+\begin{equation}
+  I_{zs} = \frac{m \cdot R^2}{2}.
+\label{eqn:Zs}
+\end{equation}
+\\Für einen liegenden Zylinder, bei dem die Achse durch den Schwerpunkt geht, ist das Trägheitsmoment
+\begin{equation}
+  I_{zl} = m \left(\frac {R^2}{4}+\frac {h^2}{12} \right).
+\label{eqn:Zl}
+\end{equation}
+\\Ein Stab, der sich um eines seiner Enden dreht, hat das Trägheitsmoment
+\begin{equation}
+  I_{st} = \frac{m \cdot L^2}{3}
+  \label{eqn:stab}
+\end{equation}

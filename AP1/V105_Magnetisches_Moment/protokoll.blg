@@ -1,0 +1,9 @@
+[0] Config.pm:302> INFO - This is Biber 2.8
+[1] Config.pm:305> INFO - Logfile is 'protokoll.blg'
+[90] biber-darwin:313> INFO - === Fr Dez  1, 2017, 16:27:38
+[128] Biber.pm:361> INFO - Reading 'protokoll.bcf'
+[334] Biber.pm:844> INFO - Using all citekeys in bib section 0
+[369] Biber.pm:3971> INFO - Processing section 0
+[395] Biber.pm:4144> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[603] Utils.pm:185> ERROR - Cannot find 'lit.bib'!
+[603] Biber.pm:114> INFO - ERRORS: 1

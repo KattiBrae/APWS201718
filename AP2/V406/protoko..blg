@@ -1,0 +1,5 @@
+[0] Config.pm:302> INFO - This is Biber 2.8
+[1] Config.pm:305> INFO - Logfile is 'protoko..blg'
+[91] biber-darwin:313> INFO - === Mo Jul  2, 2018, 23:30:06
+[335] Utils.pm:185> ERROR - Cannot find control file 'protoko..bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[335] Biber.pm:114> INFO - ERRORS: 1

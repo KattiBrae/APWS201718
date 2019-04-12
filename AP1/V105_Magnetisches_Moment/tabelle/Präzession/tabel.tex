@@ -1,0 +1,26 @@
+\documentclass[captions=tableheading]{scrartcl}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+
+
+
+
+\begin{document}
+%\begin{landscape}
+
+
+\begin{table}
+  \centering
+  \caption{Messdaten}
+  \label{tab:some_data}
+  \begin{tabular}{c c c c c}
+    \toprule
+     I [A] &		B [mT]	 & $1/T1$ & $1/T2$	&  $1/T3$\\
+    \midrule
+      \input{tabel.txt}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+%\end{landscape}
+\end{document}

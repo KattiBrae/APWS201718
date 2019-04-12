@@ -1,0 +1,69 @@
+\subsection{Allgemeine Theorie}
+Die kleinste Einheit, die ein magnetisches Moment erzeugen kann, ist ein magnetischer Dipol.
+Magnetische Monopole gibt es nicht.
+Magnetische Dipole können Permanentmagneten oder von Strom I durchflossene Leiter sein.
+Letztere haben ein magnetisches Moment mit der Fläche A
+\begin{equation*}
+    \vec{\mu}= I \cdot \vec{A}.
+\end{equation*}
+Auch Permanentmagneten haben ein magnetisches Moment, welches aber nicht so einfach zu berechnen ist, sondern wie in diesem Versuch gemessen werden muss.
+Mithilfe von geeigneten Spulen oder sehr großen Permanentmagneten lässt sich ein homogenes Magnetfeld schaffen.
+Geeignete Spulen können hier sogenannte Helmholtzspulen sein.
+Das sind zwei große, hintereinander stehende, ringförmige Spulen, zwischen denen sich ein nahezu homogenes Magnetfeld bildet.
+Das Magnetfeld in der Mitte der beiden Spulen berechnet sich aus der magnetischen Feldkonstante \emph{$\mu_0$}, dem Radius R der Helmholtzspulen und dem Abstand d zwischen den beiden Spulen.
+  \begin{equation}
+    B=\frac{\mu_0 \cdot I \cdot R^2}{(R^2 + (\frac{d}{2})^2)^{3/2}}.
+  \label{eqn:bfeld}
+  \end{equation}
+
+\subsection{Bestimmung des magnetischen Momentes unter Ausnutzung der Gravitation}
+Wenn eine Masse m über einen Arm r an einen Drehpunkt befestigt wird, dann bewirkt die Gravitation g ein Drehmoment $D_{g}$
+\begin{equation*}
+  \vec{D}_{g}=m \cdot (\vec{r} \times \vec{g}).
+\end{equation*}
+Ein Magnet in einem homogenen Magnetfeld hat das Drehmoment $D_{B}$
+\begin{equation*}
+  \vec{D}_{B}=\vec{\mu}_{Dipol} \times \vec{B}.
+\end{equation*}
+Dabei ist $\mu$ das magnetische Moment und B die Magnetfeldstärke.
+\\Diese Methode nutzt aus, dass das Drehmoment $D_{g}$ über die Gravitation und das magnetische Drehmoment $D_{B}$ Magneten im Gleichgewicht liegen.
+Dabei haben $\vec{g}$ und $\vec{B}$ die selbe Richtung und die Äquivalenz kann beschreiben werden als:
+  \begin{equation}
+    \vec{\mu}_{Dipol}= m \cdot g \frac{r}{B}.
+  \label{eqn:bmom1}
+  \end{equation}
+
+\subsection{Bestimmung des magnetischen Momentes über die Schwingungsdauer eines Magneten}
+Die Schwingung eines Magneten in einem magnetischen Feld kann durch die Differentialgleichung eines harmonischen Oszillators beschrieben werden als:
+\begin{equation*}
+  -|\vec{\mu}_{Dipol} \times \vec{B}| = J_K \frac{d^2 \theta}{dt^2}.
+\end{equation*}
+Hier ist $J_K$ das Trägheitsmoment des Körpers und $\theta$ der Winkel.
+\\Eine Lösung der Differentialgleichung liefert
+  \begin{equation}
+    \vec{\mu}_{Dipol}= \frac{4 \cdot \pi^2 \cdot J_K}{B \cdot T^2}.
+  \label{eqn:bmom2}
+  \end{equation}
+
+\subsection{Bestimmung des magnetischen Momentes über die Präzession einer Kugel}
+Eine Präzessionsbewegung entsteht, wenn die Drehachse eines rotierenden Körpers um eine andere, zweite Achse rotiert.
+Die Präzession ist abhängig vom Drehimpuls $L_K$, der sich durch
+\begin{equation}
+ L_k = J_k \cdot 2 \pi \nu.
+\label{eqn:lk}
+\end{equation}
+\\berechnen lässt. Der Drehimpuls ist wiederum abhängig von der Frequenz $\nu$.
+\\Das Magnetfeld wirkt als äußere Kraft auf die Präzessionsbewegung, die durch die Differentialgleichung
+\begin{equation*}
+  \vec{\mu}_{Dipol} \times \vec{B} = \frac{d \vec{L}_{K}}{dt}
+\end{equation*}
+beschrieben werden kann. Eine Lösung der Differentialgleichung ist
+\begin{equation*}
+  \Omega_p = \frac{\mu B}{|\vec{L_K}|}.
+\end{equation*}
+\\Mit der Formel für das Trägheitsmoment und der Kreisfrequenz folgt
+  \begin{equation}
+    \vec{\mu}_{Dipol} = \frac{2 \cdot \pi \cdot L_K}{B \cdot T_p},
+  \label{eqn:bmom3}
+  \end{equation}
+\\wobei $T_p$ die Umlaufdauer der Präzessionsbewegung ist.

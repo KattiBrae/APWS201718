@@ -1,0 +1,27 @@
+\documentclass[captions=tableheading]{scrartcl}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+
+
+
+
+\begin{document}
+\begin{landscape}
+
+
+\begin{table}
+  \centering
+  \caption{Messdaten}
+  \label{tab:V501}
+  \begin{tabular}{c c c c c c c c c c}
+    \toprule
+    $U$ & $Höhe$ & $U$ & $Höhe$ & $U$ & $Höhe$ & $U$ & $Höhe$ & $U$ & $Höhe$\\
+      V &     cm &   V &     cm &   V &    cm  &  V  &  cm    &  V  & cm \\
+    \midrule
+      \input{V501.txt}
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\end{landscape}
+\end{document}

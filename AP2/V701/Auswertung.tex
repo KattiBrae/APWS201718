@@ -1,0 +1,97 @@
+\subsection{Reichweite von $\alpha$-Strahlung}
+Die Messdaten zu der Reichweite der $\alpha$-Strahlung sind in den Tabellen \ref{tab:reichweite15} und \ref{tab:reichweite20} notiert.
+Die effektive Länge $x$ berechnet sich nach Gleichung \eqref{eqn:x}.
+Als Normaldruck $p_{\text{0}}$ wird $p_{\text{0}}=\SI{1013}{mbar}$ \cite{1} verwendet.
+%\begin{align*}
+%  x = x_{\text{0}} \frac{p }{p_{\text{0}}}
+%\end{align*}
+\input{reichweite15.tex}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{reichweite15.pdf}
+  \caption{Zählrate $N$ gegen die effektive Länge $x$ für den Abstand $x_{\text{0}}=\SI{15e-3}{m}$}
+  \label{fig:reichweite15}
+\end{figure}
+\input{reichweite20.tex}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{reichweite20.pdf}
+  \caption{Zählrate $N$ gegen die effektive Länge $x$ für den Abstand $x_{\text{0}}=\SI{15e-3}{m}$}
+  \label{fig:reichweite20}
+\end{figure}
+Die Zählraten $N$ werden gegen die effektiven Längen $x$ aufgetragen (Abb. \ref{fig:reichweite15}, Abb. \ref{fig:reichweite20}).
+Außerdem wird die Hälfte der jeweiligen der maximalen Zählrate $N_{\text{max}}$ markiert.
+Weiterhin wird durch den linearen Anteil der geplotteten Messwerte eine lineare Regression der Form:
+\begin{align*}
+  y=mx+b
+\end{align*}
+mittels Python gelegt.
+Der Schnittpunkt der beiden Geraden berechnet sich entsprechend über
+\begin{align}
+  \frac{N_{\text{max}}}{2}=mx+b \Leftrightarrow x= \frac{1}{m} \left( \frac{N_{\text{max}}}{2}-b \right)
+\label{eqn:schnittpunkt}
+\end{align}
+Die Parameter zu beiden linearen Regressionen lauten:
+\begin{align*}
+  m_{\text{15}}=& \SI{-11161.81319114 \pm 194.581e3}{\frac{1}{m}}\\
+  b_{\text{15}}=& \SI{213533.63549628 \pm 2560.195}{}\\
+  m_{\text{20}}=& \SI{-8865.00722469 \pm 508.736e3}{\frac{1}{m}}\\
+  b_{\text{20}}=& \SI{174533.89481311 \pm 8596.284}{}.\\
+\end{align*}
+Nach Gleichung \eqref{eqn:schnittpunkt} ergeben sich nun die Schnittpunkte:
+\begin{align*}
+x_{\text{15}}=& \SI{13.881 \pm 0.242e-3}{m} \\
+x_{\text{20}}=& \SI{14.866 \pm 1.550e-3}{m}.\\
+\end{align*}
+Die beiden Fehler werden mithilfe der Gauß'schen Fehlerfortpflanzung berechnet:
+\begin{align*}
+  \Delta x_{\text{15}}  &=&  \sqrt{ \left(-\frac{1}{m_{\text{15}}^2} \left( \frac{N_{\text{15}}}{2} - b_{\text{15}} \right) \right)^2 \Delta m_{\text{15}}^2 + \left(-\frac{1}{m_{\text{15}}} \right)^2 \Delta b_{\text{15}}^2}  &=& \SI{0.242e-3}{\frac{1}{m}}\\
+  \Delta x_{\text{20}}  &=& \sqrt{ \left( -\frac{1}{m_{\text{20}}^2} \left( \frac{N_{\text{20}}}{2} - b_{\text{20}} \right) \right)^2 \Delta m_{\text{20}}^2 + \left(-\frac{1}{m_{\text{20}}} \right)^2 \Delta b_{\text{20}}^2}  &=& \SI{1.550e-3}{\frac{1}{m}}\\
+\end{align*}
+Diese Schnittpunkte entsprechen den Reichweiten der $\alpha$-Strahlung.
+Zur Energiebestimmung ist der Channel-Wert nötig.
+Die maximale Energie $E=\SI{4}{MeV}$ ist linear mit dem Channel-Wert beim minimalen Druck verknüpft.
+Entsprechend werden mit dieser Relation die Energiewerte berechnet.
+Die Energien $E$ sind in den Abbildungen \ref{fig:e15} und \ref{fig:e20} gegen die effektiven Längen $x$ aufgetragen.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{e15.pdf}
+  \caption{Energie $E$ gegen die effektive Länge $x$ für den Abstand $x_{\text{0}}=\SI{15e-3}{m}$}
+  \label{fig:e15}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{e20.pdf}
+  \caption{Energie $E$ gegen die effektive Länge $x$ für den Abstand $x_{\text{0}}=\SI{15e-3}{m}$}
+  \label{fig:e20}
+\end{figure}
+Die Parameter der linearen Regressionen der Form $y=nx+c$ lauten:
+\begin{align*}
+  \frac{dE_{\text{15}}}{dx}   &=& n_{\text{15}} &=& \SI{-119.78612 \pm 1.957012041}{\frac{MeV}{m}}\\
+                              & & c_{\text{15}} &=& \SI{ 3.97839549 \pm 0.016916861850}{MeV}\\
+  \frac{dE_{\text{20}}}{dx}   &=& n_{\text{20}} &=& \SI{-103.33675 \pm 3.752994338}{\frac{MeV}{m}}\\
+                              & & c_{\text{20}} &=& \SI{ 3.93129148 \pm 0.043310806270}{MeV}.\\
+\end{align*}
+Die negativen Steigungen der linearen Regressionen entsprechen den Energieverlusten $\frac{dE}{dx}$.
+
+\FloatBarrier
+
+\subsection{Statistik des radioaktiven Zerfalls}
+\input{stat.tex}
+Die Messdaten zur Überprüfung der Statistik des radioaktiven Zerfalls sind in Tabelle \ref{tab:stat} notiert.
+Die Zählraten sind in Abbildung \ref{fig:stat} als Histogramm mit Python aufgetragen.
+Der Mittelwert $\mu$, die korrigierte Standardabweichung $\sigma$ und die Standardabweichung des Mittelwertes $\sigma_{\mu}$ der Messdaten $x_{\text{m}}$ berechnen sich bei einer Messdatenanzahl $M$ durch:
+\begin{align*}
+  \mu           &=&                           &=& \frac{1}{M} \sum_{m=1}^{M} x_{m}                                   &=& \SI{9261.49}{} \\
+  \sigma        &=&                           &=& \sqrt{\frac{1}{M-1} \sum_{m=1}^{M} |x_{m}-\mu|^2}                  &=& \SI{287.39}{}\\
+  \sigma_{\mu}  &=&  \frac{\sigma}{\sqrt{M}}  &=& \frac{1}{\sqrt{M}} \sqrt{\frac{1}{M} \sum_{m=1}^{M} |x_{m}-\mu|^2} &=& \SI{28.739}{}.\\
+\end{align*}
+Damit werden eine beispielhafte Gaußverteilung und eine beispielhafte Poissonverteilung in das Histogramm gelegt.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{stat.pdf}
+  \caption{Zählrate $N$ als Histogramm ihrer Häufigkeit}
+  \label{fig:stat}
+\end{figure}
+
+\FloatBarrier

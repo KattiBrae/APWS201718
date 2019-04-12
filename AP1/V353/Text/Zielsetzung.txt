@@ -1,0 +1,1 @@
+Das Ziel des Versuchs ist es die Relaxationszeit eines RC-Kreises mithilfe verschiedener Messungen zu untersuchen.

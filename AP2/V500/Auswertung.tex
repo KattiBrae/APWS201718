@@ -1,0 +1,123 @@
+\subsection{Abhängigkeit der Energie der Elektronen von der Lichtfrequenz}
+Die Messwerte des Photostroms I und der Gegenspannung U sind in Tabelle \ref{tab:v405}, \ref{tab:v436}, \ref{tab:g492}, \ref{tab:g546} und \ref{tab:o578} notiert.
+$\sqrt{I}$ ist in den Abbildungen \ref{fig:v405}, \ref{fig:v436}, \ref{fig:g492}, \ref{fig:g546} und \ref{fig:o578} für verschiedene Wellenlängen gegen $U$ aufgetragen.
+Die lineare Regression der Form $y=ax+b$ wird jeweils mit Python erstellt.
+Die Grenzspannung $U_g=x$ wird als Nullstelle berechnet mit
+\begin{equation*}
+0=ax+b \Leftrightarrow x=-\frac{b}{a}.
+\end{equation*}
+Analog erfolgt die Rechnung für die weiteren Wellenlängen.
+\input{v405.tex}
+\FloatBarrier
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Violett405.pdf}
+  \caption{Photostrom $I$ gegen Bremsspannung $U$ für $\lambda=405nm$ (Violett)}
+  \label{fig:v405}
+\end{figure}
+\FloatBarrier
+\begin{align*}
+  a &= (-1,699 \pm 2,168 \cdot 10^{-7}) 10^{-5}\si{\frac{\sqrt{A}}{V}}\\
+  b &= (1,956 \pm 4,976 \cdot 10^{-8}) 10^{-5} \si{\sqrt{A}}\\
+  -\frac{b}{a} &= \SI{1.151}{V}
+\end{align*}
+\FloatBarrier
+\input{v436.tex}
+\FloatBarrier
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Violett436.pdf}
+  \caption{Photostrom $I$ gegen Bremsspannung $U$ für $\lambda=436nm$ (Violett)}
+  \label{fig:v436}
+\end{figure}
+\FloatBarrier
+\begin{align*}
+  c &= (-3,429 \pm 9,474 \cdot 10^{-9}) 10^{-5}\si{\frac{\sqrt{A}}{V}}\\
+  d &= (3,421 \pm 4,333 \cdot 10^{-9}) 10^{-5}\si{\sqrt{A}}\\
+  -\frac{d}{c} &= \SI{0.998}{V}
+\end{align*}
+\FloatBarrier
+\input{g492.tex}
+\FloatBarrier
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Cyan492.pdf}
+  \caption{Photostrom $I$ gegen Bremsspannung $U$ für $\lambda=492nm$ (Cyan)}
+  \label{fig:g492}
+\end{figure}
+\FloatBarrier
+\begin{align*}
+  e &= (-1,216 \pm 3,049 \cdot 10^{-9}) 10^{-5}\si{\frac{\sqrt{A}}{V}}\\
+  f &= (9,202 \pm 3,966 \cdot 10^{-9}) 10^{-6}\si{\sqrt{A}}\\
+  -\frac{f}{e} &= \SI{0.757}{V}
+\end{align*}
+\FloatBarrier
+\input{g546.tex}
+\FloatBarrier
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Gruen546.pdf}
+  \caption{Photostrom $I$ gegen Bremsspannung $U$ für $\lambda=546nm$ (Grün)}
+  \label{fig:g546}
+\end{figure}
+\FloatBarrier
+\begin{align*}
+  g &= (-3,671 \pm 2,245 \cdot 10^{-7}) 10^{-5}\si{\frac{\sqrt{A}}{V}}\\
+  h &= (2,626 \pm 3,423 \cdot 10^{-8}) 10^{-5}\si{\sqrt{A}}\\
+  -\frac{h}{g} &= \SI{0.715}{V}
+\end{align*}
+\FloatBarrier
+\input{o578.tex}
+\FloatBarrier
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Orange578.pdf}
+  \caption{Photostrom $I$ gegen Bremsspannung $U$ für $\lambda=578nm$ (Orange)}
+  \label{fig:o578}
+\end{figure}
+\FloatBarrier
+\begin{align*}
+  i &= (-3,191 \pm  1,373 \cdot 10{-7}) 10^{-5}\si{\frac{\sqrt{A}}{V}}\\
+  j &= (1,837 \pm 1,785 \cdot 10^{-8}) 10^{-5}\si{\sqrt{A}}\\
+  -\frac{j}{i} &= \SI{0.576}{V}
+\end{align*}
+\FloatBarrier
+Die Frequenz des Lichtes berechnet sich aus der Wellenlänge $\lambda$ und der Lichtgeschwindigkeit c:
+\begin{equation*}
+  f=\frac{c}{\lambda}.
+\end{equation*}
+\\Die Grenzspannungen $U_g$ werden gegen die Lichtfrequenz aufgetragen (Tab. \ref{tab:hdurchenull}, Abb. \ref{fig:hdurchenull}).
+Die lineare Ausgleichsrechnung der Form $y=kx+l$ wird mit Python gemacht.
+\input{hdurchenull.tex}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{hdurchenull.pdf}
+  \caption{Grenzspannung gegen Lichtfrequenz}
+  \label{fig:hdurchenull}
+\end{figure}
+Um die Größe $h/e_0$ zu bestimmen wird die kinetische Energie der Elektronen wie folgt umgestellt:
+\begin{equation*}
+  h f = e_0 U_g + A_K \Leftrightarrow
+  U_g = \frac{h}{e_0} f -\frac{A_K}{e_0}.
+\end{equation*}
+Die Steigung $k$ des Graphen in Abbildung \ref{fig:hdurchenull} entspricht der Größe $h/e_0$, der Y-Achsenabschnitt $l$ entpricht der Größe $-A_K/e_0$:
+\begin{align*}
+  \frac{h}{e_0} =& k =& \SI{2.457 \pm 0.060} 10^{-15}\si{\frac{A}{V}}\\
+  \frac{A_K}{e_0} =& l =& \SI{-0.687 \pm 0.024}{V}
+\end{align*}
+$l$ mit der Elektronenladung \cite{taschenrechner} multipliziert ergibt die Austrittsarbeit $A_K$:
+\begin{equation*}
+  A_K=\SI{1.1002 \pm 0.0038}{10^{-19}} \si{J} = \SI{0.687 \pm 0.024}{eV}
+\end{equation*}
+\FloatBarrier
+\subsection{Abhängigkeit des Elektronenstroms von der Gegenspannung}
+Die Messwerte des Photostrom und der Gegenspannung sind in Tabelle \ref{tab:messreihe2} notiert.
+Die Abbildung \ref{fig:Messreihe2} zeigt den Stromverlauf in Abhängigkeit der Gegenspannung.
+\input{messreihe2.tex}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{messreihe2.pdf}
+  \caption{Photostrom gegen Gegenspannung}
+  \label{fig:Messreihe2}
+\end{figure}
+\FloatBarrier

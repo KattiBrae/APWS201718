@@ -1,0 +1,126 @@
+\subsection{Magnetfelder verschiedener Spulen}
+Es wird an zwei unterschiedlich langen Spulen die magnetische Flußdichte vermessen.
+
+\subsubsection{Lange Spule}
+Die Messwerte für die lange Spule werden in der Tabelle \ref{tab:ls} aufgeführt und sind in der Abbildung \ref{fig:ls} zu betrachten.
+Der Ursprung in der Grafik liegt auf dem Anfangspunkt der Spule.
+Die Mitte der Spule liegt bei $x=\SI{0.09}{m}$.
+\input{Langsp.tex}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Langesp.pdf}
+  \caption{B-Feld der langen Spule}
+  \label{fig:ls}
+\end{figure}
+Als experimenteller Vergleichswert wird der Messwert gewählt, der sich in der Mitte der Spule befindet:
+\begin{equation*}
+  B_{LS, e} = \SI{2.160e-3}{T}
+\end{equation*}
+\\abgelesen.
+\\Der theoretische Wert des Magnetfelds in der Spule wird mit Formel \eqref{eqn:ls} errechnet.
+Es ergibt sich
+\begin{equation*}
+  B_{LS, t} = \SI{2.094395e-3}{T}.
+\end{equation*}
+\FloatBarrier
+
+\subsubsection{Kurze Spule}
+Die Ergebnisse der Vermessung der kurzen Spule sind in der Tabelle \ref{tab:ks} zu sehen.
+Die Messwerte sind wiederum in der Abbildung \ref{fig:ks} aufgetragen.
+Der Anfangspunkt der Spule liegt im Ursprung, die Mitte der Spule bei $x=\SI{0.04}{m}$.
+\input{Kurzsp.tex}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Kurzesp.pdf}
+  \caption{B-Feld der kurzen Spule}
+  \label{fig:ks}
+\end{figure}
+Als experimenteller Wert wird das Maximum der magnetischen Flussdichte
+\begin{equation*}
+  B_{KS, e} = \SI{1.885e-3}{T}
+\end{equation*}
+\\gewählt.
+\\Mit Formel \eqref{eqn:ls} wird ein Theoriewert angenähert.
+Es ergibt sich
+\begin{equation*}
+  B_{KS, t} = \SI{4.712389e-3}{T}.
+\end{equation*}
+\FloatBarrier
+
+\subsection{Magnetfelder einer Helmholtzspule}
+Das Magnetfeld einer Helmholtzspule wird für die Spulenabstände $d_{1}=\SI{0.08}{m}$, $d_{2}=\SI{0.10}{m}$ und $d_{3}=\SI{0.12}{m}$ gemessen.
+Die Messwerte sind in Tabelle \ref{tab:h8}, Tabelle \ref{tab:h10} und Tabelle \ref{tab:h12} aufgeführt.
+Die Messwerte sind in Abbildung \ref{fig:h8}, Abbildung \ref{fig:h10} und Abbildung \ref{fig:h12} aufgetragen.
+
+\input{Helm8.tex}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Helm8.pdf}
+  \caption{B-Feld der Helmholzspule mit $d_{1}=\SI{0.08}{m}$}
+  \label{fig:h8}
+\end{figure}
+
+\input{Helm10.tex}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Helm10.pdf}
+  \caption{B-Feld der Helmholzspule mit $d_{2}=\SI{0.10}{m}$}
+  \label{fig:h10}
+\end{figure}
+
+\input{Helm12.tex}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Helm12.pdf}
+  \caption{B-Feld der Helmholzspule mit $d_{3}=\SI{0.12}{m}$}
+  \label{fig:h12}
+\end{figure}
+
+Folgende Werte werden als magnetische Flussdichte in der Mitte der beiden Spulen gemessen.
+\\Für den Spulenabstand $d_{1}=\SI{0.08}{m}$:
+\begin{equation*}
+  B_{H1, e} = \SI{11.97e-4}{T}.
+\end{equation*}
+\\Für den Spulenabstand $d_{2}=\SI{0.10}{m}$:
+\begin{equation*}
+  B_{H2, e} = \SI{9.73e-4}{T}.
+\end{equation*}
+\\Für den Spulenabstand $d_{3}=\SI{0.12}{m}$:
+\begin{equation*}
+  B_{H3, e} = \SI{7.76e-4}{T}.
+\end{equation*}
+\\Die theoretischen Werte werden mit Formel \eqref{eqn:helm} ermittelt.
+Es ergeben sich die folgenden Werte:
+\begin{equation*}
+  B_{H1, t} = \SI{12.01395e-4}{T}
+\end{equation*}
+\begin{equation*}
+  B_{H2, t} = \SI{9.573353e-4}{T}
+\end{equation*}
+\begin{equation*}
+  B_{H3, t} = \SI{7.548060e-4}{T}
+\end{equation*}
+\FloatBarrier
+
+
+\subsection{Hysteresekurve}
+Die Messwerte für die Hysteresekurve sind in der Tabelle \ref{tab:hys} zu sehen.
+In der Abbildung \ref{fig:hyst} sind die Messwerte aufgetragen.
+Aus der Graphik lassen sich die äquvalenten Werte für die Remanenz und die Koerzitivkraft ablesen.
+Das Äquvalent der Remanenz hat den Wert
+\begin{equation*}
+  B_r = \SI{-123.2}{mT}.
+\end{equation*}
+\\Das Äquvalent der Koerzitivkraft lässt sich als
+\begin{equation*}
+  H_c = \SI{-0,7}{A}
+\end{equation*}
+bestimmen.
+\input{tabneu.tex}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{hysterese.pdf}
+  \caption{Hysteresekurve}
+  \label{fig:hyst}
+\end{figure}
+\FloatBarrier

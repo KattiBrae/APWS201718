@@ -1,0 +1,18 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{2}
+\contentsline {section}{\numberline {2}Theorie}{2}
+\contentsline {section}{\numberline {3}Aufbau und Durchführung}{4}
+\contentsline {subsection}{\numberline {3.1}Magnetfelder verschiedener Spulen}{4}
+\contentsline {subsubsection}{\numberline {3.1.1}Lange Spule}{4}
+\contentsline {subsubsection}{\numberline {3.1.2}Kurze Spule}{4}
+\contentsline {subsection}{\numberline {3.2}Magnetfelder einer Helmholtzspule}{4}
+\contentsline {subsection}{\numberline {3.3}Hysteresekurve}{4}
+\contentsline {section}{\numberline {4}Auswertung}{5}
+\contentsline {subsection}{\numberline {4.1}Magnetfelder verschiedener Spulen}{5}
+\contentsline {subsubsection}{\numberline {4.1.1}Lange Spule}{5}
+\contentsline {subsubsection}{\numberline {4.1.2}Kurze Spule}{6}
+\contentsline {subsection}{\numberline {4.2}Magnetfelder einer Helmholtzspule}{8}
+\contentsline {subsection}{\numberline {4.3}Hysteresekurve}{14}
+\contentsline {section}{\numberline {5}Diskussion}{15}

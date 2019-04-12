@@ -1,0 +1,78 @@
+\subsection{Charakteristik des Zählrohres}
+Die Messergebnisse sind in der Tabelle \ref{tab:N/U} einzusehen.
+In der Graphik \ref{fig:N/U} sind die Messwerte dargestellt.
+\input{tabNI.tex}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Graphik1.pdf}
+  \caption{Charakteristik des Zählrohres}
+  \label{fig:N/U}
+\end{figure}
+
+Für das Plateau wird eine lineare Ausgleichsrechnung durchgeführt.
+Die Grade hat die Form:
+\begin{align*}
+  y=mx+b\\
+  m=\SI{1,781\pm0,038}{\frac{1}{min V}}\\
+  b=\SI{9603\pm97,995}{\frac{1}{min}}
+\end{align*}
+Die Steigung in Prozent beträgt: $m=\SI{4,17}{\percent}$ pro $\SI{100}{V}$.\\
+Die Länge des Plateau reicht ungefähr von $\SI{320}{V}$ bis $\SI{680}{V}$.
+\subsection{Bestimmung der Totzeit mit der Zwei-Quellen-Methode}
+Bei $\SI{540}{V}$ werden zwei Unterscheidliche $\beta$-Quelle zusammen und getrent vermessen.
+Es ergeben sich folgende Messwerte:
+\begin{align*}
+  N_{\text{R1}}&=\SI{10629\pm103}{\frac{1}{min}}\\
+  N_{\text{R2}}&=\SI{1185\pm34}{\frac{1}{min}}\\
+  N_{\text{R1+R2}}&=\SI{11642\pm108}{\frac{1}{min}}
+\end{align*}
+Mit der Formel \ref{eqn:T} lässt sich die Totzeit bestimmen.
+\begin{align*}
+  T\approx\SI{6,8\pm9,54e-6}{min}
+\end{align*}
+Der Fehler wird mit der Gauß'schen Fehlerfortpflanzung berechnet.
+\begin{align*}
+  \text{Fehler}=\sqrt{ \left(\frac{N_{\text{R2}}-N_{\text{R1+R2}}}{2N_{\text{R1}}^2N_{\text{R2}}}\right)^2\cdot(\SI{103}{})^2+\left(\frac{N_{\text{R1}}-N_{\text{R1+R2}}}{2N_{\text{R1}}N_{\text{R2}}^2}\right)^2\cdot(\SI{34}{})^2+\left(-\frac{1}{N_{\text{R1}}N_{\text{R2}}}\right)^2\cdot(\SI{108}{})^2}
+\end{align*}
+
+\subsection{Bestimmung der Totzeit mit Hilfe des Oszilloskops}
+Für die Totzeitmessung mit dem Oszilloskop ergeben sich folgende Werte:
+\begin{align*}
+  T_{\text{U=460V}}&=3,8\cdot50\SI{}{\mu s}=\SI{3,17e-6}{min}\\
+  T_{\text{U=510V}}&=4,0\cdot50\SI{}{\mu s}=\SI{3,33e-6}{min}\\
+  T_{\text{U=580V}}&=4,2\cdot50\SI{}{\mu s}=\SI{3,5e-6}{min}
+\end{align*}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Totzeit2.pdf}
+  \caption{Totzeitermittlung mit Hilfe des Oszilloskops}
+  \label{fig:TotzeitOsz}
+\end{figure}
+Die Werte sind in der Graphik \ref{fig:TotzeitOsz} aufgetragen.
+Mit einer Ausgleichsgraden der Form
+\begin{align*}
+  y&=ax+b\\
+  a&=\SI{2,7\pm0,000046e-9}{\frac{min}{V}}\\
+  b&=\SI{1,923\pm0,012e-6}{min}
+\end{align*}
+lässt sich für $T_{\text{U=540V}}=\SI{3,381\pm0,012e-6}{min}$ bestimmen.
+Der Fehler wird mit der Gauß'schen Fehlerfortpflanzung berechnet.
+\begin{align*}
+  \text{Fehler}=\sqrt{ \left(x\right)^2\cdot(\SI{4,6e-14}{})^2+\left(1\right)^2\cdot(\SI{1,2e-8}{})^2}
+\end{align*}
+
+%%%%%%%%%%%%%%%%%%%%
+%Jeder N Wert hat einen Feler von N^(1/2)
+%Fehlerrechnug
+Die Erholungszeit lässt sich nur grob abschätzen:
+\begin{align*}
+  T_{\text{U=460}}&=\SI{4e-6}{min}\\
+  T_{\text{U=510}}&=\SI{1,17e-5}{min}\\
+  T_{\text{U=580}}&=\SI{1,5e-5}{min}\\
+  T_{\text{Mittelwert}}&=\SI{1,2e-5}{min}
+\end{align*}
+
+\subsection{Freigesetzte Ladung pro Teilchen}
+Es wird der Strom in Abhängigkeit von der Spannung gemessen. Die Messergebnisse sind in der Tabell \ref{tab:N/U} zu finden.
+Mit Hilfe der Formel \ref{eqn:I} kann der Strom pro Teilchen ausgerechnet werden. Das Z in der Formel ist die Anzahl der regestrierten Teilchen in der Zeit $\Delta T$.
+Die Ergebnisse sind ebenfals in der Tabelle \ref{tab:N/U} dargestellt.

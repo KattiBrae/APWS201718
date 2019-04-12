@@ -1,0 +1,2 @@
+In diesem Versuch werden die Interferenzmuster von Einzelspalten und Doppelspalten untersucht.
+Dazu werden die theoretischen nicht-linearen Verläufe der Intensität an die aufgenommenen Messwerte gefittet.
